@@ -1,0 +1,22 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# SSIS build output
+bin/
+obj/
+*.ispac
+
+# Salesforce CLI cache
+.sf/
+
+# Editor
+.vscode/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

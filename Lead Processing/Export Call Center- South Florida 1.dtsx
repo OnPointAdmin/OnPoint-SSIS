@@ -1,0 +1,2533 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/20/2022 6:25:50 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="JASON"
+  DTS:CreatorName="JASON\Jason Paine"
+  DTS:Description="DTS Wizard-generated package"
+  DTS:DTSID="{3694A6C9-67F5-442D-8960-B637A17867CE}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="1033"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="Export OPMA - Call Center- South Florida"
+  DTS:VersionBuild="271"
+  DTS:VersionGUID="{90DD502A-939A-45D6-B1D3-667CC5EFFC3C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionFlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{494E362D-1526-4CD9-9EE7-1BB693485791}"
+      DTS:ObjectName="DestinationConnectionFlatFile">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.03.1534.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="caller_id"
+              DTS:DTSID="{8261247A-BD80-41FB-960B-DBAD5611FEBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="first_name"
+              DTS:DTSID="{43E1D034-4F0D-4D72-B20D-F35FE1710C70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="last_name"
+              DTS:DTSID="{CFAF96BA-9E9E-4118-B3BA-7A82910069C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address"
+              DTS:DTSID="{6CDBA757-A734-41EE-A0BA-315589FD59B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{9D54B484-AAEC-4646-BD51-02D7F56D6FD4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{17F37675-7F44-4784-9235-B0D8D6E3DE26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="zip"
+              DTS:DTSID="{9C6FF7F2-A84B-40CF-A1C9-73C50DBB8A3D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="email"
+              DTS:DTSID="{6F098426-4584-4808-86FD-9FCF47F4538F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AgeRange"
+              DTS:DTSID="{F901159A-D12D-4C6F-B3EE-BAE88F8B07E5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="annual_income"
+              DTS:DTSID="{79EE45A5-35D8-4F4F-87C7-7CF0D82B311C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Marital Status"
+              DTS:DTSID="{7E195404-B654-42F7-ACAE-2B1755892588}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{9910B9AC-35FD-431B-9B1F-8E1AAF2236CB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HomeOwner"
+              DTS:DTSID="{570018F6-3893-4EBA-BEBF-0BD8D1AAC03D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OP_Id"
+              DTS:DTSID="{D021DDAC-29D1-42BD-9ED3-404889EBE389}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="jornayaleadid"
+              DTS:DTSID="{1E30C153-FA25-48A7-A984-94637EB23B64}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="trustedform"
+              DTS:DTSID="{1D90991C-1D7D-4A08-9AAC-FF5B3A0EA388}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Venue"
+              DTS:DTSID="{29E7DE02-60F9-4345-AB2C-293EC86A1A09}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event"
+              DTS:DTSID="{A4047C05-DD14-4DC3-8118-CA7EF0BE5660}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="original_lead_submit_date"
+              DTS:DTSID="{87989776-521D-4C12-AB83-BC6F450EDA61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PartnerList"
+              DTS:DTSID="{584429E8-410A-4E4D-B0E5-69460026B5B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="File Name"
+              DTS:DTSID="{27F08FD0-FC48-40C4-9E11-5BF3E1583DBF}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FileForReassigndNumber]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{758D43D0-B609-4EFD-997C-B64B28108E5F}"
+      DTS:ObjectName="FileForReassigndNumber">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FilePathReassigned]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.03.1534_Reassigned.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone"
+              DTS:DTSID="{B940E124-A552-42A8-9BEE-40406CF08AE5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{2D492B0C-03E8-40D1-B41D-049350E736BB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company_Id"
+              DTS:DTSID="{42B98FEA-9A55-4720-B4BA-2DB31D88DD10}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{26BB4360-A36A-4B79-9E3C-01FEB89E734E}"
+      DTS:ObjectName="Client"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">On Point Marketing Agency</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{121D74A3-5EEB-457A-A8EF-0AC2F5297DAD}"
+      DTS:ObjectName="EmailRecipients"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">jason.paine@onpointmrg.com</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:Description="Tour age end date passed to Get_Leads_Count_Down1.9 (@TourAgeEnd / EndDate)."
+      DTS:DTSID="{B2D4F023-5A7C-4E9B-8F32-6C9D1E2A4B58}"
+      DTS:ObjectName="EndDate">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">08/28/2026</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:Description="Partner list company filter passed to Get_Leads_Count_Down1.9 (@PartnerListCompanies)."
+      DTS:DTSID="{A7C3E912-4F6B-4D8A-9E21-5B8C0D1F3A47}"
+      DTS:ObjectName="PartnerListCompanies">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">Wyndham Destinations</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{135BD691-9B13-4670-8C40-BDDAF077C94A}"
+      DTS:ObjectName="pCountRequested"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:Description="Root OneDrive Leads folder (no trailing slash). Override per environment, e.g. C:\\Users\\...\\Leads on the server."
+      DTS:DTSID="{7614C4A9-A13B-48E2-A0F9-6FE972F91C94}"
+      DTS:ObjectName="pLeadRoot"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:Description="Tour age start date passed to Get_Leads_Count_Down1.9 (@TourAgeStart / StartDate)."
+      DTS:DTSID="{C3E5A134-6B8D-4F0C-9A43-7D0E2F3B5C69}"
+      DTS:ObjectName="StartDate">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">08/01/2025</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1D3B79EE-0985-4FF3-97ED-B13F346EBF61}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CountAvailable">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{ADD8F808-6A52-488D-B317-724B89512FCF}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CountReturned">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{61C5C3A5-B642-4538-BA5B-57F58664FE82}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::vClientNameNoSpaces] +  &quot;_Leads_&quot; +  (DT_WSTR, 11) @[User::RecordCount]  + &quot;_&quot;  +&#xA; (DT_STR,4,1252) DatePart(&quot;yyyy&quot;,getdate()) + &quot;.&quot; +&#xA;Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;m&quot;,getdate()),2) + &quot;.&quot; +&#xA;Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;d&quot;,getdate()),2) +&quot;.&quot; + &#xA;Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;hh&quot;,getdate()),2)  + &#xA;Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;mi&quot;,getdate()),2)  + &#xA; &quot;.csv&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileName">
+      <DTS:VariableValue
+        DTS:DataType="8">OnPointMarketingAgency_Leads_0_2026.09.03.1534.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FBC10B28-45B3-41EF-B91A-CC20CAB087B6}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::vClientNameNoSpaces] +  &quot;_Leads_&quot; +  (DT_WSTR, 11) @[User::RecordCount]  + &quot;_&quot;  +&#xA; (DT_STR,4,1252) DatePart(&quot;yyyy&quot;,getdate()) + &quot;.&quot; +&#xA;Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;m&quot;,getdate()),2) + &quot;.&quot; +&#xA;Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;d&quot;,getdate()),2) +&quot;.&quot; + &#xA;Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;hh&quot;,getdate()),2)  + &#xA;Right(&quot;0&quot; + (DT_STR,4,1252) DatePart(&quot;mi&quot;,getdate()),2)  + &#xA; &quot;_Reassigned.csv&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileNameReasigned">
+      <DTS:VariableValue
+        DTS:DataType="8">OnPointMarketingAgency_Leads_0_2026.09.03.1534_Reassigned.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4A4EEF37-7366-4212-B8C0-7AE01E5C2D43}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::LeadDirectory]  +   @[User::FileName]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.03.1534.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9ED6E660-4B00-43BF-9467-16E0A22CA3CB}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::LeadDirectory]  +  @[User::FileNameReasigned]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FilePathReassigned">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.03.1534_Reassigned.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6E9EEDD7-B8C9-4EFC-B2CB-31A7BA92CE43}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Issue">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{075F8006-533D-4D55-8126-4866182BDE32}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Project::pLeadRoot] + &quot;\\Clients\\&quot; + @[User::vClientNameNoSpaces] + &quot;\\Leads\\&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="LeadDirectory">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9DA79665-F6D2-4E96-9900-29E4D89E9B8A}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::Client]  +  &quot; Leads &quot; + (DT_WSTR,4)DATEPART(&quot;yyyy&quot;,GetDate()) + &quot;.&quot;+&#xA;RIGHT(&quot;0&quot; + (DT_WSTR,2)DATEPART(&quot;mm&quot;,GetDate()) ,2) +&quot;.&quot;+&#xA;RIGHT(&quot;0&quot; + (DT_WSTR,2)DATEPART(&quot;dd&quot;,GetDate()),2)  + &quot; Lead Count: &quot; +  (DT_WSTR,4)@[User::RecordCount]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="MessageSubject">
+      <DTS:VariableValue
+        DTS:DataType="8">On Point Marketing Agency Leads 2026.09.03 Lead Count: 0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6FABADF0-A0DE-4F26-969A-480A5EA62AF4}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="OutputCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{83E7E391-52E5-4C58-B910-7846CA43D79A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="RecordCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A250CA57-949D-4C37-97BE-DE7D47A9F7C3}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SessionId">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6B80BB33-0D84-402D-9129-530CEA76F0E0}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6E6D2306-4276-4BD5-8024-67FF75315C6E}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::Client]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="vClientName">
+      <DTS:VariableValue
+        DTS:DataType="8">On Point Marketing Agency</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5C1E4783-BD97-48A4-AF6C-8D66A5115916}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="REPLACE(REPLACE(@[$Package::Client],&quot;.&quot;,&quot;&quot;),&quot; &quot;,&quot;&quot;)"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="vClientNameNoSpaces">
+      <DTS:VariableValue
+        DTS:DataType="8">OnPointMarketingAgency</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2EF256DA-49C0-4292-B7DF-3D859B6BCB12}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[$Package::pCountRequested]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="vCountRequested">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Assign Call Center Leads"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{2CF13FD9-95D2-42FB-8A69-9B20EC3BE2DF}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Assign Call Center Leads"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{FBC8FF5F-2AEC-4FFA-88DF-4CCA0CF31417}"
+          SQLTask:SqlStatementSource="&#xA;&#xA;DECLARE @Sessionid uniqueidentifier&#xA;DECLARE @Procname varchar(128)&#xA;DECLARE @Procsection varchar(50)&#xA;DECLARE @Status bit&#xA;DECLARE @Errormessage nvarchar(2044)&#xA;&#xA;EXECUTE [dbo].[Lead_Assign_Call_Center_Update] &#xA;   @Sessionid&#xA;  ,@Procname OUTPUT&#xA;  ,@Procsection OUTPUT&#xA;  ,@Status OUTPUT&#xA;  ,@Errormessage OUTPUT&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Check Lead Export"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B82025F6-AC42-4683-9021-1526E8316E26}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Check Lead Export"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{15658E45-DC0B-46D5-A344-25EF57876B94}"
+          SQLTask:SqlStatementSource="DECLARE @ClientName varchar(80)&#xA;DECLARE @CountOutput int&#xA;DECLARE @SessionId uniqueidentifier&#xA;DECLARE @ProcName varchar(128)&#xA;DECLARE @ProcSection varchar(50)&#xA;DECLARE @Status bit&#xA;DECLARE @ErrorMessage nvarchar(2044)&#xA;DECLARE @Issue VARCHAR(100)&#xA;&#xA;Set @Sessionid =?&#xA;Set @ClientName = ?&#xA;set @CountOutput = ?&#xA;&#xA;EXECUTE [dbo].[Check_Lead_Export2] &#xA;   @ClientName&#xA;  ,@CountOutPut&#xA;  ,@SessionId&#xA;  ,@ProcName OUTPUT&#xA;  ,@ProcSection OUTPUT&#xA;  ,@Status OUTPUT&#xA;  ,@ErrorMessage OUTPUT&#xA;  ,? OUTPUT" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::SessionId"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::vClientName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="2"
+            SQLTask:DtsVariableName="User::OutputCount"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="3"
+            SQLTask:DtsVariableName="User::Issue"
+            SQLTask:ParameterDirection="Output"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create Lead Directory"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="File System Task"
+      DTS:DTSID="{7A66C85F-8933-4FBF-BB56-910516E27344}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create Lead Directory"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="CreateDirectory"
+          TaskOverwriteDestFile="True"
+          TaskSourcePath="User::LeadDirectory"
+          TaskIsSourceVariable="True" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute Get Leads"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5BAE01D2-D72B-43EC-8903-2271EDFA765B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Get Leads"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{15658E45-DC0B-46D5-A344-25EF57876B94}"
+          SQLTask:SqlStatementSource="-- SSIS Execute SQL: South Florida Leads → Get_Leads_Count_Down1.9&#xA;-- Parameter markers (?):&#xA;--   0 = @CountRequested (input)&#xA;--   1 = @PartnerListCompanies (input)&#xA;--   2 = @TourAgeStart / StartDate (input)&#xA;--   3 = @TourAgeEnd / EndDate (input)&#xA;--   4 = @CountAvailable (output)&#xA;--   5 = @CountReturned (output)&#xA;--   6 = @SessionIdOut (output)&#xA;&#xA;TRUNCATE TABLE [dbo].[Temp_Export_Leads]&#xA;TRUNCATE TABLE [dbo].[Temp_Get_Leads]&#xA;&#xA;DECLARE @ClientName VARCHAR(80)&#xA;DECLARE @ExportName VARCHAR(100)&#xA;DECLARE @Vertical VARCHAR(50)&#xA;DECLARE @LeadSource VARCHAR(500)&#xA;DECLARE @Venue VARCHAR(500)&#xA;DECLARE @Locations VARCHAR(80)&#xA;DECLARE @CountRequested INT&#xA;DECLARE @MinIncome INT&#xA;DECLARE @MaxIncome INT&#xA;DECLARE @MinAge INT&#xA;DECLARE @MaxAge INT&#xA;DECLARE @MaritalStatus VARCHAR(50)&#xA;DECLARE @TourAgeStart DATE&#xA;DECLARE @TourAgeEnd DATE&#xA;DECLARE @HomeOwnerOrRenter VARCHAR(10)&#xA;DECLARE @IsHasCreditCard BIT&#xA;DECLARE @LeadAge VARCHAR(30)&#xA;DECLARE @CheckPartnerList BIT&#xA;DECLARE @CheckClientZips BIT&#xA;DECLARE @CheckClientSuppression BIT&#xA;DECLARE @CheckSoldLeads BIT&#xA;DECLARE @ZipFileName VARCHAR(500)&#xA;DECLARE @IncludeOrExcludeZip VARCHAR(10)&#xA;DECLARE @ZipFileSegment VARCHAR(100)&#xA;DECLARE @States VARCHAR(100)&#xA;DECLARE @IncludeOrExcludeState AS VARCHAR(10)&#xA;DECLARE @ExcludeBookings BIT&#xA;DECLARE @ExcludeSoldSameVertical BIT&#xA;DECLARE @RecycledOnly AS BIT&#xA;DECLARE @RecycleSameVerticalDate DATE&#xA;DECLARE @RecycleSameClientDate DATE&#xA;DECLARE @AutoTourQualified BIT&#xA;DECLARE @Gender AS VARCHAR(255)&#xA;DECLARE @QualificationCode VARCHAR(10)&#xA;DECLARE @CheckPartnerListField AS BIT&#xA;DECLARE @LongTermRenter AS BIT&#xA;DECLARE @MinCreditScore AS INT&#xA;DECLARE @AreaCodeList AS VARCHAR(255)&#xA;DECLARE @FilterNames AS BIT&#xA;DECLARE @DestinationZip VARCHAR(10)&#xA;DECLARE @RadiusMiles DECIMAL(9,2)&#xA;DECLARE @PartnerListCompanies VARCHAR(500)&#xA;---------------------------------------&#xA;DECLARE @SessionId UNIQUEIDENTIFIER&#xA;DECLARE @ProcName VARCHAR(128)&#xA;DECLARE @ProcSection VARCHAR(50)&#xA;DECLARE @Status BIT&#xA;DECLARE @ErrorMessage NVARCHAR(2044)&#xA;DECLARE @CountAvailable INT&#xA;DECLARE @CountReturned INT&#xA;DECLARE @DupesPhone INT&#xA;DECLARE @DupesEmail INT&#xA;DECLARE @SessionIdOut UNIQUEIDENTIFIER&#xA;&#xA;------------------------------------------------&#xA;SET @CountRequested = ?&#xA;SET @ClientName = 'On Point Marketing Agency'&#xA;SET @ExportName = 'South Florida Leads'&#xA;SET @Vertical = 'Travel'&#xA;SET @LeadSource = 'On Point Marketing Agency'   ---,Kaleo Marketing LLC,Resort Vacations Inc. -&#xA;SET @PartnerListCompanies = ?&#xA;SET @CheckPartnerListField = 'true'&#xA;SET @Venue = '' --American Dream Kiosk 1, American Dream Kiosk 2, American Dream Kiosk 3&#xA;SET @Locations = ''&#xA;SET @TourAgeStart = ?&#xA;SET @TourAgeEnd = ?&#xA;SET @CheckPartnerList = 'true'&#xA;SET @LeadAge = 'U30,U60,U90,91+,365+' --U30,U60,U90,91+,365+&#xA;SET @CheckClientZips = 'false'&#xA;SET @ZipFileName = ''&#xA;SET @IncludeOrExcludeZip = ''&#xA;SET @States = 'FL'&#xA;SET @IncludeOrExcludeState = 'Include'&#xA;SET @MinIncome = '75'&#xA;SET @MaxIncome = ''&#xA;SET @MinAge = '28'&#xA;SET @MaxAge = '75'&#xA;SET @MaritalStatus = 'Married, Single Female' --Options: Married, Single Female, Single Male, All&#xA;SET @HomeOwnerOrRenter = 'Both' --Options: 'Home Owner', 'Renter', 'Both'&#xA;SET @IsHasCreditCard = 'false'&#xA;SET @ExcludeBookings = 'true'&#xA;SET @CheckSoldLeads = 'true'&#xA;SET @RecycledOnly = 'false'&#xA;SET @ExcludeSoldSameVertical = 'true'&#xA;SET @RecycleSameVerticalDate = DATEADD(dd, -90, GETDATE())&#xA;SET @RecycleSameClientDate = DATEADD(dd, -90, GETDATE())&#xA;SET @QualificationCode = ''&#xA;SET @CheckClientSuppression = 'TRUE'&#xA;SET @AutoTourQualified = 'false'&#xA;SET @Gender = '' --Female, Male, Other, Rather Not Say&#xA;SET @LongTermRenter = 'FALSE'&#xA;SET @MinCreditScore = ''&#xA;SET @AreaCodeList = ''&#xA;SET @FilterNames = 'false'&#xA;SET @DestinationZip = '' --10017&#xA;SET @RadiusMiles = '0' --30&#xA;&#xA;EXECUTE [dbo].[Get_Leads_Count_Down1.9] @ClientName&#xA;    , @ExportName&#xA;    , @Vertical&#xA;    , @LeadSource&#xA;    , @Venue&#xA;    , @Locations&#xA;    , @CountRequested&#xA;    , @MinIncome&#xA;    , @MaxIncome&#xA;    , @MinAge&#xA;    , @MaxAge&#xA;    , @MaritalStatus&#xA;    , @HomeOwnerOrRenter&#xA;    , @IsHasCreditCard&#xA;    , @LeadAge&#xA;    , @TourAgeStart&#xA;    , @TourAgeEnd&#xA;    , @CheckPartnerList&#xA;    , @CheckClientZips&#xA;    , @CheckClientSuppression&#xA;    , @CheckSoldLeads&#xA;    , @ZipFileName&#xA;    , @IncludeOrExcludeZip&#xA;    , @ZipFileSegment&#xA;    , @States&#xA;    , @IncludeOrExcludeState&#xA;    , @ExcludeBookings&#xA;    , @ExcludeSoldSameVertical&#xA;    , @RecycledOnly&#xA;    , @RecycleSameVerticalDate&#xA;    , @RecycleSameClientDate&#xA;    , @AutoTourQualified&#xA;    , @Gender&#xA;    , @QualificationCode&#xA;    , @CheckPartnerListField&#xA;    , @LongTermRenter&#xA;    , @MinCreditScore&#xA;    , @AreaCodeList&#xA;    , @FilterNames&#xA;    , @DestinationZip&#xA;    , @RadiusMiles&#xA;    , @PartnerListCompanies&#xA;    ----------------------------&#xA;    , @SessionId&#xA;    , @ProcName OUTPUT&#xA;    , @ProcSection OUTPUT&#xA;    , @Status OUTPUT&#xA;    , @ErrorMessage OUTPUT&#xA;    , ? OUTPUT --Count Available&#xA;    , ? OUTPUT --CountReturned&#xA;    , @DupesPhone OUTPUT&#xA;    , @DupesEmail OUTPUT&#xA;    , ? OUTPUT --SessionId&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::vCountRequested"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="$Package::PartnerListCompanies"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="2"
+            SQLTask:DtsVariableName="$Package::StartDate"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="3"
+            SQLTask:DtsVariableName="$Package::EndDate"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="4"
+            SQLTask:DtsVariableName="User::CountAvailable"
+            SQLTask:ParameterDirection="Output"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="5"
+            SQLTask:DtsVariableName="User::CountReturned"
+            SQLTask:ParameterDirection="Output"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="6"
+            SQLTask:DtsVariableName="User::SessionId"
+            SQLTask:ParameterDirection="Output"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Export File For Reassigned"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{091595FE-BBB7-407F-923F-86EA2A741FFD}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Export File For Reassigned"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Export File For Reassigned\Flat File Connection"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Connection"
+              validateExternalMetadata="False">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Export File For Reassigned\Flat File Connection.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[FileForReassigndNumber]"
+                  connectionManagerRefId="Package.ConnectionManagers[FileForReassigndNumber]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Export File For Reassigned\Flat File Connection.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Export File For Reassigned\Flat File Connection.Inputs[Flat File Destination Input].Columns[Company_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Company_Id"
+                      externalMetadataColumnId="Package\Export File For Reassigned\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Company_Id]"
+                      lineageId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].Columns[Company_Id]" />
+                    <inputColumn
+                      refId="Package\Export File For Reassigned\Flat File Connection.Inputs[Flat File Destination Input].Columns[Phone]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="Phone"
+                      externalMetadataColumnId="Package\Export File For Reassigned\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Phone]"
+                      lineageId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].Columns[Phone]" />
+                    <inputColumn
+                      refId="Package\Export File For Reassigned\Flat File Connection.Inputs[Flat File Destination Input].Columns[Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\Export File For Reassigned\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].Columns[Date]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Export File For Reassigned\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\Export File For Reassigned\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Export File For Reassigned\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Company_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Company_Id" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Export File For Reassigned\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 'Telephone Number List' as Phone,cast(''as varchar) as Date,''as Company_Id
+union all
+SELECT [t].[Phone]  as PhoneNumber
+	, cast(cast([t].Entry_Created_Date as DATE)as varchar) as CreatedDate
+	,'C466957229' as Company_Id
+FROM [dbo].[Temp_Export_Leads] AS [t]</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping">"0:Input",{6E6D2306-4276-4BD5-8024-67FF75315C6E};</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Export File For Reassigned\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{15658E45-DC0B-46D5-A344-25EF57876B94}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Leads]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].Columns[Company_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Company_Id]"
+                      length="10"
+                      lineageId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].Columns[Company_Id]"
+                      name="Company_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].Columns[Phone]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Phone]"
+                      length="40"
+                      lineageId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].Columns[Phone]"
+                      name="Phone"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Date]"
+                      length="30"
+                      lineageId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Company_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Company_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Phone]"
+                      dataType="wstr"
+                      length="40"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="Date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Phone]"
+                      dataType="wstr"
+                      length="40"
+                      lineageId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Phone]"
+                      name="Phone" />
+                    <outputColumn
+                      refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Date]"
+                      name="Date" />
+                    <outputColumn
+                      refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Company_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Company_Id]"
+                      name="Company_Id" />
+                    <outputColumn
+                      refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Export File For Reassigned\Row Count"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::OutputCount</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Export File For Reassigned\Row Count.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Export File For Reassigned\Row Count.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Export File For Reassigned\Row Count.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Export File For Reassigned.Paths[OLE DB Source Output]"
+              endId="Package\Export File For Reassigned\Row Count.Inputs[Row Count Input 1]"
+              name="OLE DB Source Output"
+              startId="Package\Export File For Reassigned\OLE DB Source.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Export File For Reassigned.Paths[Row Count Output 1]"
+              endId="Package\Export File For Reassigned\Flat File Connection.Inputs[Flat File Destination Input]"
+              name="Row Count Output 1"
+              startId="Package\Export File For Reassigned\Row Count.Outputs[Row Count Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Export Leads to CSV"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{1C7A83E2-7F72-4A02-BD05-28551CEC2400}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Export Leads to CSV"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Export Leads to CSV\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Export Leads to CSV\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Derived Column.Inputs[Derived Column Input].Columns[CreatedDate]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="CreatedDate"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreatedDate]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Export Leads to CSV\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Output].Columns[original_lead_submit_date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Output].Columns[original_lead_submit_date]"
+                      name="original_lead_submit_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_WSTR,10)(DT_DBDATE)#{Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreatedDate]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_WSTR,10)(DT_DBDATE)CreatedDate</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Output].Columns[File Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Output].Columns[File Name]"
+                      name="File Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[User::FileName]</property>
+                        <property
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::FileName]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Export Leads to CSV\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Export Leads to CSV\Flat File Connection"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Connection"
+              validateExternalMetadata="False">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Export Leads to CSV\Flat File Connection.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionFlatFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionFlatFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[AgeRange]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="AgeRange"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[AgeRange]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[AgeRange]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[Marital Status]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Marital Status"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Marital Status]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Marital Status]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[Gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[HomeOwner]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="HomeOwner"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[HomeOwner]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[HomeOwner]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[OP_Id]"
+                      cachedDataType="wstr"
+                      cachedLength="18"
+                      cachedName="OP_Id"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[OP_Id]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[OP_Id]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[Venue]"
+                      cachedDataType="wstr"
+                      cachedLength="80"
+                      cachedName="Venue"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Venue]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Venue]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[Event]"
+                      cachedDataType="wstr"
+                      cachedLength="80"
+                      cachedName="Event"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Event]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Event]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[FirstName]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="FirstName"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[first_name]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[FirstName]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[LastName]"
+                      cachedDataType="wstr"
+                      cachedLength="80"
+                      cachedName="LastName"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[last_name]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastName]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[Address]"
+                      cachedDataType="wstr"
+                      cachedLength="201"
+                      cachedName="Address"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[address]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Address]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[City]"
+                      cachedDataType="wstr"
+                      cachedLength="80"
+                      cachedName="City"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[city]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[City]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[State]"
+                      cachedDataType="wstr"
+                      cachedLength="80"
+                      cachedName="State"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[state]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[State]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[Zip]"
+                      cachedDataType="wstr"
+                      cachedLength="11"
+                      cachedName="Zip"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[zip]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Zip]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[Email]"
+                      cachedDataType="wstr"
+                      cachedLength="80"
+                      cachedName="Email"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[email]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Email]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[Income]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Income"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[annual_income]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Income]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[JornayaLeadId]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="JornayaLeadId"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[jornayaleadid]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[JornayaLeadId]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[TrustedForm]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="TrustedForm"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[trustedform]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[TrustedForm]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[original_lead_submit_date]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="original_lead_submit_date"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[original_lead_submit_date]"
+                      lineageId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Output].Columns[original_lead_submit_date]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[PhoneNumber]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="PhoneNumber"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[caller_id]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[PhoneNumber]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[Partners_List]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="Partners_List"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[PartnerList]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Partners_List]" />
+                    <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[File Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="File Name"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[File Name]"
+                      lineageId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Output].Columns[File Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[AgeRange]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AgeRange" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Marital Status]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Marital Status" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[HomeOwner]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="HomeOwner" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[OP_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="OP_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Venue]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Venue" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Event]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Event" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[caller_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="caller_id" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[first_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="first_name" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[last_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="last_name" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="address" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="state" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[zip]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="zip" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="email" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[annual_income]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="annual_income" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[jornayaleadid]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="jornayaleadid" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[trustedform]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="trustedform" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[original_lead_submit_date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="original_lead_submit_date" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[PartnerList]"
+                      codePage="1252"
+                      dataType="text"
+                      name="PartnerList" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[File Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="File Name" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Export Leads to CSV\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [t].[Phone]  as PhoneNumber
+	, [t].[FirstName]
+	, [t].[LastName]
+	, rtrim(CONCAT (
+			[t].[Address]
+			, ' '
+			, [t].[Address2]
+			)) AS [Address]
+	, [t].[City]
+	, [t].[State]
+	, [t].[Zip_Code] as [Zip]
+	, [t].[Email]
+	, [t].[Age_Range] AS [AgeRange]
+	, [t].[Income]
+	, [t].[Marital_Status] AS [Marital Status]
+	, [t].[Gender]
+	, [t].Home_Owner AS [HomeOwner]
+	, Cast([t].[ExportDate] as Date) as [ExportDate]
+	, [t].[Id] as [OP_Id]
+	, [t].[JornayaLeadId] as [JornayaLeadId]
+	, [t].[Trusted_Form] as TrustedForm
+	, [t].[Venue]
+	, [t].[Event]
+	, cast([t].Entry_Created_Date as DATE) as CreatedDate
+    ,cast([t].[Partners_List] as varchar(1000)) as [Partners_List]
+FROM [dbo].[Temp_Export_Leads] AS [t]</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping">"0:Input",{6E6D2306-4276-4BD5-8024-67FF75315C6E};</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Export Leads to CSV\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{15658E45-DC0B-46D5-A344-25EF57876B94}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Leads]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[City]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[City]"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Income]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Income]"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Income]"
+                      name="Income"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      length="40"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      name="FirstName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastName]"
+                      name="LastName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Address]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Address]"
+                      length="201"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Address]"
+                      name="Address"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[State]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[State]"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[State]"
+                      name="State"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Zip]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Zip]"
+                      length="11"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Zip]"
+                      name="Zip"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Email]"
+                      name="Email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[AgeRange]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AgeRange]"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[AgeRange]"
+                      name="AgeRange"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Marital Status]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Marital Status]"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Marital Status]"
+                      name="Marital Status"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Gender]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Gender]"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExportDate]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ExportDate]"
+                      length="10"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExportDate]"
+                      name="ExportDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[PhoneNumber]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PhoneNumber]"
+                      length="40"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[PhoneNumber]"
+                      name="PhoneNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[JornayaLeadId]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[JornayaLeadId]"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[JornayaLeadId]"
+                      name="JornayaLeadId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[TrustedForm]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TrustedForm]"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[TrustedForm]"
+                      name="TrustedForm"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[HomeOwner]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HomeOwner]"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[HomeOwner]"
+                      name="HomeOwner"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[OP_Id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[OP_Id]"
+                      length="18"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[OP_Id]"
+                      name="OP_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Venue]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Venue]"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Venue]"
+                      name="Venue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Event]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Event]"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Event]"
+                      name="Event"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreatedDate]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CreatedDate]"
+                      length="10"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreatedDate]"
+                      name="CreatedDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Partners_List]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Partners_List]"
+                      length="1000"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Partners_List]"
+                      name="Partners_List"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="80"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Income]"
+                      dataType="wstr"
+                      length="255"
+                      name="Income" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      dataType="wstr"
+                      length="40"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="80"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Address]"
+                      dataType="wstr"
+                      length="201"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[State]"
+                      dataType="wstr"
+                      length="80"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Zip]"
+                      dataType="wstr"
+                      length="11"
+                      name="Zip" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      dataType="wstr"
+                      length="80"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AgeRange]"
+                      dataType="wstr"
+                      length="255"
+                      name="AgeRange" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Marital Status]"
+                      dataType="wstr"
+                      length="255"
+                      name="Marital Status" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Gender]"
+                      dataType="wstr"
+                      length="255"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ExportDate]"
+                      dataType="dbDate"
+                      name="ExportDate" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PhoneNumber]"
+                      dataType="wstr"
+                      length="40"
+                      name="PhoneNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[JornayaLeadId]"
+                      dataType="wstr"
+                      length="255"
+                      name="JornayaLeadId" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TrustedForm]"
+                      dataType="wstr"
+                      length="255"
+                      name="TrustedForm" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HomeOwner]"
+                      dataType="wstr"
+                      length="255"
+                      name="HomeOwner" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[OP_Id]"
+                      dataType="wstr"
+                      length="18"
+                      name="OP_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Venue]"
+                      dataType="wstr"
+                      length="80"
+                      name="Venue" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Event]"
+                      dataType="wstr"
+                      length="80"
+                      name="Event" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CreatedDate]"
+                      dataType="dbDate"
+                      name="CreatedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Partners_List]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Partners_List" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PhoneNumber]"
+                      dataType="wstr"
+                      length="40"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PhoneNumber]"
+                      name="PhoneNumber" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      dataType="wstr"
+                      length="40"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      name="FirstName" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      dataType="wstr"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      name="LastName" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Address]"
+                      dataType="wstr"
+                      length="201"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Address]"
+                      name="Address" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[City]"
+                      dataType="wstr"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[City]"
+                      name="City" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[State]"
+                      dataType="wstr"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[State]"
+                      name="State" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Zip]"
+                      dataType="wstr"
+                      length="11"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Zip]"
+                      name="Zip" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      dataType="wstr"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      name="Email" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AgeRange]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AgeRange]"
+                      name="AgeRange" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Income]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Income]"
+                      name="Income" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Marital Status]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Marital Status]"
+                      name="Marital Status" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Gender]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Gender]"
+                      name="Gender" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HomeOwner]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HomeOwner]"
+                      name="HomeOwner" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ExportDate]"
+                      dataType="dbDate"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ExportDate]"
+                      name="ExportDate" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[OP_Id]"
+                      dataType="wstr"
+                      length="18"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[OP_Id]"
+                      name="OP_Id" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[JornayaLeadId]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[JornayaLeadId]"
+                      name="JornayaLeadId" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TrustedForm]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TrustedForm]"
+                      name="TrustedForm" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Venue]"
+                      dataType="wstr"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Venue]"
+                      name="Venue" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Event]"
+                      dataType="wstr"
+                      length="80"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Event]"
+                      name="Event" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CreatedDate]"
+                      dataType="dbDate"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CreatedDate]"
+                      name="CreatedDate" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Partners_List]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Partners_List]"
+                      name="Partners_List" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Export Leads to CSV\Row Count"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::OutputCount</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Export Leads to CSV\Row Count.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Export Leads to CSV\Row Count.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Export Leads to CSV\Row Count.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Export Leads to CSV.Paths[Derived Column Output]"
+              endId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Export Leads to CSV\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Export Leads to CSV.Paths[OLE DB Source Output]"
+              endId="Package\Export Leads to CSV\Row Count.Inputs[Row Count Input 1]"
+              name="OLE DB Source Output"
+              startId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Export Leads to CSV.Paths[Row Count Output 1]"
+              endId="Package\Export Leads to CSV\Derived Column.Inputs[Derived Column Input]"
+              name="Row Count Output 1"
+              startId="Package\Export Leads to CSV\Row Count.Outputs[Row Count Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Get Count"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Get Count"
+      DTS:DTSID="{45B69B3C-E08C-4D10-9881-566DEFF26B24}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get Count"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{15658E45-DC0B-46D5-A344-25EF57876B94}"
+          SQLTask:SqlStatementSource="SET ? = (SELECT Count(DISTINCT (t.phone)) AS [Count]&#xA;FROM [dbo].[Temp_Export_Leads] t)&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::RecordCount"
+            SQLTask:ParameterDirection="Output"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Log Export"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{710373C8-73AF-4F5E-817C-C08C44657DBC}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Log Export"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{15658E45-DC0B-46D5-A344-25EF57876B94}"
+          SQLTask:SqlStatementSource="DECLARE @Client varchar(50)&#xA;DECLARE @Sessionid uniqueidentifier&#xA;DECLARE @Partner nvarchar(50)&#xA;DECLARE @Procname varchar(128)&#xA;DECLARE @Procsection varchar(50)&#xA;DECLARE @Status bit&#xA;DECLARE @Errormessage nvarchar(2044)&#xA;&#xA;set @Client = ?&#xA;&#xA;EXECUTE [dbo].[Log_Lead_Export2] &#xA;   @Client &#xA;  ,@Sessionid&#xA;  ,@Partner&#xA;  ,@Procname OUTPUT&#xA;  ,@Procsection OUTPUT&#xA;  ,@Status OUTPUT&#xA;  ,@Errormessage OUTPUT&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::vClientName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{FB0827CC-6308-4A69-837F-DBA6D55674D9}"
+      DTS:From="Package\Execute Get Leads"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Get Count" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{DF570687-A9DF-4BBE-B5DC-C44B01B156B4}"
+      DTS:EvalOp="3"
+      DTS:Expression="@[User::OutputCount]  != 0"
+      DTS:From="Package\Export Leads to CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Log Export" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{669B1A26-A533-43B4-9411-C3BAD803B49B}"
+      DTS:From="Package\Log Export"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Assign Call Center Leads" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{017DB5F5-1388-4FB4-897F-F2DDEE9093FF}"
+      DTS:From="Package\Get Count"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Create Lead Directory" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{33782E9B-7551-4DA0-96B3-A7CF2C371BEA}"
+      DTS:From="Package\Assign Call Center Leads"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Check Lead Export" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{77F0EF95-37C2-4B62-BC76-CAAB0B3F01F3}"
+      DTS:From="Package\Create Lead Directory"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\Export Leads to CSV" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{EC74C890-1B83-46B1-AF58-CCEFFF633722}"
+      DTS:From="Package\Export Leads to CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 9"
+      DTS:To="Package\Export File For Reassigned" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="164.666666666667,42"
+          Id="Package\Assign Call Center Leads"
+          TopLeft="239.7,513.5" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Check Lead Export"
+          TopLeft="238.9,615.1" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Create Lead Directory"
+          TopLeft="449.1,208.7" />
+        <NodeLayout
+          Size="186.666666666667,42.6666666666667"
+          Id="Package\Execute Get Leads"
+          TopLeft="713.9,5.49999999999995" />
+        <NodeLayout
+          Size="184.666666666667,42"
+          Id="Package\Export File For Reassigned"
+          TopLeft="446.7,411.9" />
+        <NodeLayout
+          Size="175.333333333334,42"
+          Id="Package\Export Leads to CSV"
+          TopLeft="451.5,310.3" />
+        <NodeLayout
+          Size="126,42"
+          Id="Package\Get Count"
+          TopLeft="734.3,107.1" />
+        <NodeLayout
+          Size="128.666666666667,42"
+          Id="Package\Log Export"
+          TopLeft="257.7,411.9" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="807.233333333333,48.1666666666666">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.93333333333339,58.9333333333334"
+              Start="0,0"
+              End="-9.93333333333339,51.4333333333334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.4666666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.4666666666667"
+                    Point2="0,29.4666666666667"
+                    Point3="-4,29.4666666666667" />
+                  <mssgle:LineSegment
+                    End="-5.93333333333339,29.4666666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.93333333333339,29.4666666666667"
+                    Point2="-9.93333333333339,29.4666666666667"
+                    Point3="-9.93333333333339,33.4666666666667" />
+                  <mssgle:LineSegment
+                    End="-9.93333333333339,51.4333333333334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="511.233333333333,351.9">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-189.133333333333,60"
+              Start="0,0"
+              End="-189.133333333333,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3257918552036" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.3257918552036"
+                    Point2="0,24.3257918552036"
+                    Point3="-4,24.3257918552036" />
+                  <mssgle:LineSegment
+                    End="-185.133333333333,24.3257918552036" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-185.133333333333,24.3257918552036"
+                    Point2="-189.133333333333,24.3257918552036"
+                    Point3="-189.133333333333,28.3257918552036" />
+                  <mssgle:LineSegment
+                    End="-189.133333333333,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-102.566666666667,29.3257918552036,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="322.1,453.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="777.5,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-238.4,59.9999999999999"
+              Start="0,0"
+              End="-238.4,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.4528301886792" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.4528301886792"
+                    Point2="0,24.4528301886792"
+                    Point3="-4,24.4528301886792" />
+                  <mssgle:LineSegment
+                    End="-234.4,24.4528301886792" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-234.4,24.4528301886792"
+                    Point2="-238.4,24.4528301886792"
+                    Point3="-238.4,28.4528301886792" />
+                  <mssgle:LineSegment
+                    End="-238.4,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="322.1,555.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="539.1,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="566.966666666667,351.9">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-27.8666666666667,59.9999999999999"
+              Start="0,0"
+              End="-27.8666666666667,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3257918552036" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.3257918552036"
+                    Point2="0,24.3257918552036"
+                    Point3="-4,24.3257918552036" />
+                  <mssgle:LineSegment
+                    End="-23.8666666666667,24.3257918552036" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-23.8666666666667,24.3257918552036"
+                    Point2="-27.8666666666667,24.3257918552036"
+                    Point3="-27.8666666666667,28.3257918552036" />
+                  <mssgle:LineSegment
+                    End="-27.8666666666667,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Export File For Reassigned">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="121.333333333334,41.3333333333334"
+          Id="Package\Export File For Reassigned\Row Count"
+          TopLeft="23.1,107.1" />
+        <NodeLayout
+          Size="156.666666666667,41.3333333333334"
+          Id="Package\Export File For Reassigned\Flat File Connection"
+          TopLeft="5.50000000000003,208.7" />
+        <NodeLayout
+          Size="156.666666666667,41.3333333333334"
+          Id="Package\Export File For Reassigned\OLE DB Source"
+          TopLeft="5.50000000000001,5.49999999999995" />
+        <EdgeLayout
+          Id="Package\Export File For Reassigned.Paths[Row Count Output 1]"
+          TopLeft="83.9,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Export File For Reassigned.Paths[OLE DB Source Output]"
+          TopLeft="83.9,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Export File For Reassigned\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Export Leads to CSV">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Export Leads to CSV\Row Count"
+          TopLeft="23.1,107.1" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\Export Leads to CSV\Derived Column"
+          TopLeft="13.1,208.7" />
+        <NodeLayout
+          Size="156.666666666667,42"
+          Id="Package\Export Leads to CSV\Flat File Connection"
+          TopLeft="5.50000000000003,310.3" />
+        <NodeLayout
+          Size="156.666666666667,42"
+          Id="Package\Export Leads to CSV\OLE DB Source"
+          TopLeft="5.5,5.49999999999995" />
+        <EdgeLayout
+          Id="Package\Export Leads to CSV.Paths[OLE DB Source Output]"
+          TopLeft="83.9,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Export Leads to CSV.Paths[Derived Column Output]"
+          TopLeft="83.9,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Export Leads to CSV.Paths[Row Count Output 1]"
+          TopLeft="83.9,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Export Leads to CSV\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

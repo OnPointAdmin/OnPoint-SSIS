@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Leads"
+  DTS:DTSID="{15658E45-DC0B-46D5-A344-25EF57876B94}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=OnPointSQL1;User ID=jason.paine;Initial Catalog=Leads;Provider=SQLNCLI11.1;Application Name=SSIS-Export OPMA - Call Center- South Florida-{15658E45-DC0B-46D5-A344-25EF57876B94}OnPointSQL1.Leads.jason.paine;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArwqr8cot70yyBXJKdYlPxwAAAAACAAAAAAAQZgAAAAEAACAAAAAeWtmA4PgEfXsTcvVW7PpYxf58xMFiGfTjTqf0p50CKgAAAAAOgAAAAAIAACAAAADgsFCfXYrgkK0a+yShAO5AHl1EQaYVkroEvwP9vTezAoAAAACTO9W5xasXs70+/bjI0HS4HIbtF8eScrbb8wfesnVbPFZOFXGh3Geng+fkJwkNpjgr/gxmArQN0hJtdWhv2kHbxo9eVBuSt0sYPBxvXX0hk3yUWxRf7IPbWKLKvS1Zr0rL7RLGLXoVx/rjvyz95EFlFTuUmIV31z1Orx9yiYM5gEAAAABNNq0hkixlf0eqSl0qFbpCbAG/epRGyi9dBmDNMOlsvYkKLPHss6BZzL+h486L5//llEMHi1E0od+B21bclcc9</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

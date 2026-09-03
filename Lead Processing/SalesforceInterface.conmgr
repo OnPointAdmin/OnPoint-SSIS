@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SalesforceInterface"
+  DTS:DTSID="{FBC8FF5F-2AEC-4FFA-88DF-4CCA0CF31417}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=OnPointSQL1;User ID=jason.paine;Initial Catalog=SalesforceInterface;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Export OPMA - Call Center- South Florida-{FBC8FF5F-2AEC-4FFA-88DF-4CCA0CF31417}OnPointSQL1.SalesforceInterface.jason.pain;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArwqr8cot70yyBXJKdYlPxwAAAAACAAAAAAAQZgAAAAEAACAAAADOhZNfDfd+Qm3HwMHCj15HH2S8hB/xLVSCCD2OvATHeAAAAAAOgAAAAAIAACAAAADllT5wJ4AIcTamV7T1t3qTnw5BufZab+gPq6tLCHQDoYAAAABn0RY/HEJAHPm1uN0e+zexDNQz4F8jGZw7mK21xA1CwQmCdnZMhjO+0cFjq8A+jBoqtFJbXWeVlEMm7mMvKGQR3BZI8h4cOvWZN5d7sLHORTCJGebPS+AZI39X8O2XmcErdHzCAjdLIxlSS9JREsrjk0ABmEkbJyyinkXE2uBKzkAAAAAyzWe+sxz88UJ1V4h4nFAezzzWXJjcxhIoQaTLgbooYWOlD14gk3CIfQKgl0WgoYQ+aOrZmn0hFtiuyo2FneGe</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
