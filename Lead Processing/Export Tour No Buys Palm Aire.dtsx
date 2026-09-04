@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="Export OPMA - Tour No Buys Palm Aire"
-  DTS:VersionBuild="272"
-  DTS:VersionGUID="{4AA4989F-3056-4204-97F0-518B89120655}">
+  DTS:VersionBuild="273"
+  DTS:VersionGUID="{ECF9F5A3-8C97-49D6-A47E-9D84CBE5B2BD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -33,7 +33,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1531.csv">
+          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -338,7 +338,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1531_Reassigned.csv">
+          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543_Reassigned.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -413,6 +413,16 @@
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:Description="Number of months before today for tour date end. End date is that day plus 2 days (e.g. 3/12 becomes 3/14)."
+      DTS:DTSID="{B8F3C47A-1E5D-4A92-9B06-C3D7E8F1A240}"
+      DTS:ObjectName="TourDateEndMonthsBack">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">6</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
       DTS:DataType="8"
       DTS:DTSID="{6EB8DC8A-A492-4F8B-A8ED-A88053837608}"
       DTS:ObjectName="TourDateStart">
@@ -467,7 +477,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FileName">
       <DTS:VariableValue
-        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1531.csv</DTS:VariableValue>
+        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -478,7 +488,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FileNameReasigned">
       <DTS:VariableValue
-        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1531_Reassigned.csv</DTS:VariableValue>
+        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543_Reassigned.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -489,7 +499,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FilePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1531.csv</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -500,7 +510,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FilePathReassigned">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1531_Reassigned.csv</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543_Reassigned.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -521,7 +531,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="LeadDirectory">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -532,7 +542,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="MessageSubject">
       <DTS:VariableValue
-        DTS:DataType="8">On Point Marketing Agency Leads 2026.09.03 Lead Count: 0</DTS:VariableValue>
+        DTS:DataType="8">On Point Marketing Agency Leads 2026.09.04 Lead Count: 0</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -694,7 +704,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{15658E45-DC0B-46D5-A344-25EF57876B94}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Temp_Export_Leads]&#xA;TRUNCATE TABLE [dbo].[Temp_Get_Leads]&#xA;&#xA;DECLARE @ClientName VARCHAR(80)&#xA;DECLARE @ExportName VARCHAR(100)&#xA;DECLARE @Vertical VARCHAR(50)&#xA;DECLARE @LeadSource VARCHAR(500)&#xA;DECLARE @Venue VARCHAR(500)&#xA;DECLARE @TourLocation VARCHAR(500)&#xA;DECLARE @CountRequested INT&#xA;DECLARE @MinIncome INT&#xA;DECLARE @MaxIncome INT&#xA;DECLARE @MinAge INT&#xA;DECLARE @MaxAge INT&#xA;DECLARE @MaritalStatus VARCHAR(50)&#xA;DECLARE @TourAgeStart DATE&#xA;DECLARE @TourAgeEnd DATE&#xA;DECLARE @CheckPartnerList BIT&#xA;DECLARE @CheckClientZips BIT&#xA;DECLARE @CheckClientSuppression BIT&#xA;DECLARE @CheckSoldLeads BIT&#xA;DECLARE @ZipFileName VARCHAR(500)&#xA;DECLARE @IncludeOrExcludeZip VARCHAR(10)&#xA;DECLARE @ZipFileSegment VARCHAR(100)&#xA;DECLARE @States VARCHAR(100)&#x9;&#xA;DECLARE @ExcludeBookings BIT&#xA;DECLARE @ExcludeSoldSameVertical BIT&#xA;DECLARE @RecycledOnly as BIT&#xA;DECLARE @RecycleSameVerticalDate DATE&#xA;DECLARE @RecycleSameClientDate Date&#xA;DECLARE @CheckPartnerListField as BIT&#xA;DECLARE @TourOrNoShow as varchar(20)&#xA;---------------------------------------&#xA;DECLARE @SessionId UNIQUEIDENTIFIER&#xA;DECLARE @ProcName VARCHAR(128)&#xA;DECLARE @ProcSection VARCHAR(50)&#xA;DECLARE @Status BIT&#xA;DECLARE @ErrorMessage NVARCHAR(2044)&#xA;DECLARE @CountAvailable INT&#xA;DECLARE @CountReturned INT&#xA;DECLARE @DupesPhone INT&#xA;DECLARE @DupesEmail INT&#xA;DECLARE @SessionIdOut UNIQUEIDENTIFIER&#xA;&#xA;-- Get today's date&#xA;DECLARE @Today DATE;&#xA;SET @Today = GETDATE();&#xA;&#xA;-------------------------------------------------&#xA;SET @ClientName = ? &#xA;SET @CountRequested = ?&#xA;SET @ExportName = 'OPMA Travel Tour No Buys'&#xA;SET @Vertical = 'Travel'&#xA;SET @LeadSource = 'On Point, On Point Marketing Agency'   ---,Kaleo Marketing LLC&#xA;SET @Venue = '' ---'Prudential Center,Dodgers Game,Honda Center '&#xA;SET @TourLocation = ? -- blank/NULL = all; comma-separated for multiple&#xA;SET @TourAgeStart =  ?&#xA;SET @TourAgeEnd = ?&#xA;SET @CheckPartnerList = 'false'&#xA;SET @CheckClientZips = ''&#xA;SET @ZipFileName = ''&#xA;SET @IncludeOrExcludeZip = ''&#xA;SET @States = ''--('ny,nj,ct')&#xA;SET @MinIncome = ''&#xA;SET @MaxIncome = ''&#xA;SET @MinAge = ''&#xA;SET @MaxAge = ''&#xA;SET @MaritalStatus = '' --Options: Married, Single Female, Single Male, All&#xA;&#xA;SET @ExcludeBookings = 'false'&#xA;SET @CheckSoldLeads = 'true'&#xA;SET @RecycledOnly = 'false'&#xA;SET @ExcludeSoldSameVertical = 'false'&#xA;SET @RecycleSameVerticalDate = ''&#xA;SET @RecycleSameClientDate = ''&#xA;SET @CheckClientSuppression = 'TRUE'&#xA;&#xA;SET @TourOrNoShow = ? --Tour or No Show&#xA;&#xA;EXECUTE [dbo].[Get_Leads_Bookings_1.0] @ClientName&#xA;    , @ExportName&#xA;&#x9;, @Vertical&#xA;&#x9;, @LeadSource&#xA;&#x9;, @Venue&#xA;&#x9;, @TourLocation&#xA;&#x9;, @CountRequested&#xA;&#x9;, @MinIncome&#xA;&#x9;, @MaxIncome&#xA;&#x9;, @MinAge&#xA;&#x9;, @MaxAge&#xA;&#x9;, @MaritalStatus&#xA;&#x9;, @TourAgeStart&#xA;&#x9;, @TourAgeEnd&#xA;&#x9;, @CheckPartnerList&#xA;&#x9;, @CheckClientZips&#xA;&#x9;, @CheckSoldLeads&#xA;&#x9;, @ZipFileName&#xA;&#x9;, @IncludeOrExcludeZip&#xA;&#x9;, @ZipFileSegment&#xA;&#x9;, @States&#xA;&#x9;, @ExcludeSoldSameVertical&#xA;&#x9;, @RecycledOnly&#xA;&#x9;, @RecycleSameVerticalDate&#xA;    , @RecycleSameClientDate&#xA;&#x9;, @CheckPartnerListField &#xA;&#x9;, @TourOrNoShow&#xA;&#x9;----------------------------&#xA;&#x9;, @SessionId&#xA;&#x9;, @ProcName OUTPUT&#xA;&#x9;, @ProcSection OUTPUT&#xA;&#x9;, @Status OUTPUT&#xA;&#x9;, @ErrorMessage OUTPUT&#xA;&#x9;, ? OUTPUT --Count Available&#xA;&#x9;, ? OUTPUT --CountReturned&#xA;&#x9;, @DupesPhone OUTPUT&#xA;&#x9;, @DupesEmail OUTPUT&#xA;   &#x9; , ? OUTPUT --SessionId&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Temp_Export_Leads]&#xA;TRUNCATE TABLE [dbo].[Temp_Get_Leads]&#xA;&#xA;DECLARE @ClientName VARCHAR(80)&#xA;DECLARE @ExportName VARCHAR(100)&#xA;DECLARE @Vertical VARCHAR(50)&#xA;DECLARE @LeadSource VARCHAR(500)&#xA;DECLARE @Venue VARCHAR(500)&#xA;DECLARE @TourLocation VARCHAR(500)&#xA;DECLARE @CountRequested INT&#xA;DECLARE @MinIncome INT&#xA;DECLARE @MaxIncome INT&#xA;DECLARE @MinAge INT&#xA;DECLARE @MaxAge INT&#xA;DECLARE @MaritalStatus VARCHAR(50)&#xA;DECLARE @TourAgeStart DATE&#xA;DECLARE @TourAgeEnd DATE&#xA;DECLARE @CheckPartnerList BIT&#xA;DECLARE @CheckClientZips BIT&#xA;DECLARE @CheckClientSuppression BIT&#xA;DECLARE @CheckSoldLeads BIT&#xA;DECLARE @ZipFileName VARCHAR(500)&#xA;DECLARE @IncludeOrExcludeZip VARCHAR(10)&#xA;DECLARE @ZipFileSegment VARCHAR(100)&#xA;DECLARE @States VARCHAR(100)&#x9;&#xA;DECLARE @ExcludeBookings BIT&#xA;DECLARE @ExcludeSoldSameVertical BIT&#xA;DECLARE @RecycledOnly as BIT&#xA;DECLARE @RecycleSameVerticalDate DATE&#xA;DECLARE @RecycleSameClientDate Date&#xA;DECLARE @CheckPartnerListField as BIT&#xA;DECLARE @TourOrNoShow as varchar(20)&#xA;---------------------------------------&#xA;DECLARE @SessionId UNIQUEIDENTIFIER&#xA;DECLARE @ProcName VARCHAR(128)&#xA;DECLARE @ProcSection VARCHAR(50)&#xA;DECLARE @Status BIT&#xA;DECLARE @ErrorMessage NVARCHAR(2044)&#xA;DECLARE @CountAvailable INT&#xA;DECLARE @CountReturned INT&#xA;DECLARE @DupesPhone INT&#xA;DECLARE @DupesEmail INT&#xA;DECLARE @SessionIdOut UNIQUEIDENTIFIER&#xA;&#xA;-- Get today's date&#xA;DECLARE @Today DATE;&#xA;SET @Today = GETDATE();&#xA;&#xA;-------------------------------------------------&#xA;SET @ClientName = ? &#xA;SET @CountRequested = ?&#xA;SET @ExportName = 'OPMA Travel Tour No Buys'&#xA;SET @Vertical = 'Travel'&#xA;SET @LeadSource = 'On Point, On Point Marketing Agency'   ---,Kaleo Marketing LLC&#xA;SET @Venue = '' ---'Prudential Center,Dodgers Game,Honda Center '&#xA;SET @TourLocation = ? -- blank/NULL = all; comma-separated for multiple&#xA;SET @TourAgeStart =  ?&#xA;SET @TourAgeEnd = DATEADD(DAY, 2, DATEADD(MONTH, -?, @Today))&#xA;SET @CheckPartnerList = 'false'&#xA;SET @CheckClientZips = ''&#xA;SET @ZipFileName = ''&#xA;SET @IncludeOrExcludeZip = ''&#xA;SET @States = ''--('ny,nj,ct')&#xA;SET @MinIncome = ''&#xA;SET @MaxIncome = ''&#xA;SET @MinAge = ''&#xA;SET @MaxAge = ''&#xA;SET @MaritalStatus = '' --Options: Married, Single Female, Single Male, All&#xA;&#xA;SET @ExcludeBookings = 'false'&#xA;SET @CheckSoldLeads = 'true'&#xA;SET @RecycledOnly = 'false'&#xA;SET @ExcludeSoldSameVertical = 'false'&#xA;SET @RecycleSameVerticalDate = ''&#xA;SET @RecycleSameClientDate = ''&#xA;SET @CheckClientSuppression = 'TRUE'&#xA;&#xA;SET @TourOrNoShow = ? --Tour or No Show&#xA;&#xA;EXECUTE [dbo].[Get_Leads_Bookings_1.0] @ClientName&#xA;    , @ExportName&#xA;&#x9;, @Vertical&#xA;&#x9;, @LeadSource&#xA;&#x9;, @Venue&#xA;&#x9;, @TourLocation&#xA;&#x9;, @CountRequested&#xA;&#x9;, @MinIncome&#xA;&#x9;, @MaxIncome&#xA;&#x9;, @MinAge&#xA;&#x9;, @MaxAge&#xA;&#x9;, @MaritalStatus&#xA;&#x9;, @TourAgeStart&#xA;&#x9;, @TourAgeEnd&#xA;&#x9;, @CheckPartnerList&#xA;&#x9;, @CheckClientZips&#xA;&#x9;, @CheckSoldLeads&#xA;&#x9;, @ZipFileName&#xA;&#x9;, @IncludeOrExcludeZip&#xA;&#x9;, @ZipFileSegment&#xA;&#x9;, @States&#xA;&#x9;, @ExcludeSoldSameVertical&#xA;&#x9;, @RecycledOnly&#xA;&#x9;, @RecycleSameVerticalDate&#xA;    , @RecycleSameClientDate&#xA;&#x9;, @CheckPartnerListField &#xA;&#x9;, @TourOrNoShow&#xA;&#x9;----------------------------&#xA;&#x9;, @SessionId&#xA;&#x9;, @ProcName OUTPUT&#xA;&#x9;, @ProcSection OUTPUT&#xA;&#x9;, @Status OUTPUT&#xA;&#x9;, @ErrorMessage OUTPUT&#xA;&#x9;, ? OUTPUT --Count Available&#xA;&#x9;, ? OUTPUT --CountReturned&#xA;&#x9;, @DupesPhone OUTPUT&#xA;&#x9;, @DupesEmail OUTPUT&#xA;   &#x9; , ? OUTPUT --SessionId&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="$Package::Client"
@@ -721,9 +731,9 @@
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="4"
-            SQLTask:DtsVariableName="$Package::TourDateEnd"
+            SQLTask:DtsVariableName="$Package::TourDateEndMonthsBack"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
+            SQLTask:DataType="3"
             SQLTask:ParameterSize="-1" />
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="5"
