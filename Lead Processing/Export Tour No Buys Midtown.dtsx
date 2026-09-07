@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="Export OPMA - Tour No Buys Midtown"
-  DTS:VersionBuild="271"
-  DTS:VersionGUID="{310744B6-C623-4F99-8E83-A2B8A52D7612}">
+  DTS:VersionBuild="272"
+  DTS:VersionGUID="{9F15C466-21C7-4760-A1F9-63357DD0A5D1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -33,7 +33,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1530.csv">
+          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1337.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -338,7 +338,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1530_Reassigned.csv">
+          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1337_Reassigned.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -418,7 +418,7 @@
       DTS:ObjectName="TourDateStart">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">08/01/2025</DTS:Property>
+        DTS:Name="ParameterValue">07/01/2025</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -467,7 +467,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FileName">
       <DTS:VariableValue
-        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1530.csv</DTS:VariableValue>
+        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1337.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -478,7 +478,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FileNameReasigned">
       <DTS:VariableValue
-        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1530_Reassigned.csv</DTS:VariableValue>
+        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1337_Reassigned.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -489,7 +489,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FilePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1530.csv</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1337.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -500,7 +500,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FilePathReassigned">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.03.1530_Reassigned.csv</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1337_Reassigned.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -521,7 +521,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="LeadDirectory">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -532,7 +532,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="MessageSubject">
       <DTS:VariableValue
-        DTS:DataType="8">On Point Marketing Agency Leads 2026.09.03 Lead Count: 0</DTS:VariableValue>
+        DTS:DataType="8">On Point Marketing Agency Leads 2026.09.04 Lead Count: 0</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
