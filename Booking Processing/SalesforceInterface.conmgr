@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="ONPOINTSQL1.SalesforceInterface"
+  DTS:DTSID="{ECA175E0-12CC-470D-B988-CFD149559703}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=ONPOINTSQL1;User ID=jason.paine;Initial Catalog=SalesforceInterface;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Bookings-{ECA175E0-12CC-470D-B988-CFD149559703}ONPOINTSQL1.SalesforceInterface;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArwqr8cot70yyBXJKdYlPxwAAAAACAAAAAAAQZgAAAAEAACAAAABI7tUq/WsfYCkB2y7OAM9HjwEihtaKY8/SIX6IlCoSLgAAAAAOgAAAAAIAACAAAAAKPoFQ3JviXQqJT32TCUx9LQOm+JbLqdB/1XNLySWxlIAAAABpZXp/kBrU/L4/Wvdl9bUdmwXFufNZFaqA71sTS1GIHi6Fp+u/EDWPhBKEMZ6bhBhof/4gPMeK+q/Gu16Pgqj9PjytO0oakMFVciSek5OmP73ZNhmWi1qY0ebnp/8V32th6Mriv7F5+hgGYI8hjQj683gDPcyAekbzo7COkpo/mEAAAAAyg+kTnpA2r+UN+pSclKV0LkTAnXlG/y7vS+Jmn68qMe6XBQgrjwBZi47Svxcq5eFb4Y8LL0KyHJCL9ku1/5SZ</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

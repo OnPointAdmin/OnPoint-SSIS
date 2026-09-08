@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SMTP 1"
+  DTS:DTSID="{EB850E44-B84E-4DD3-947B-5EDAA0D2114D}"
+  DTS:CreationName="ZS-SMTP">
+  <DTS:ObjectData>
+    <ConnectionManager
+      ConnectionString="SmtpServer=smtp.office365.com;UserName=jason.paine@onpointmrg.com;Port=587;EnableSsl=True;Timeout=10000;EnableAnonymousAuth=False"
+      ConnectByProxy="False">
+      <Password
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArwqr8cot70yyBXJKdYlPxwAAAAACAAAAAAAQZgAAAAEAACAAAADV3i0yZkgVq1kb9lbnu37EUD/J/UWyc99L4JVvQMnb/wAAAAAOgAAAAAIAACAAAADHXwHkjM8/rPcIBTHc6L35NCP7wqsKAve1Opl807KW5jAAAABcDXU6pxjdsz7iCw5goezI8Pp9AXjGMRHzbXZRiaqUo1T71uadg3KAf5VbpaXIqWxAAAAAXNAsuEz4WYqukf7i/iLQ1qEbe0FMyMCJYK/RHjJ5qXoey40EdqVKeCHgNDCcp/NgdK9DBSM8ku6ywkjyhMl8tg==</Password>
+    </ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

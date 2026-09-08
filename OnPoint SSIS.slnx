@@ -7,4 +7,7 @@
   <Project Path="Booking Processing/Booking Processing.dtproj" Type="c9674dcb-5085-4a16-b785-4c70dd1589bd">
     <Platform Project="?" />
   </Project>
+  <Project Path="Lead Processing/Lead Processing.dtproj" Type="c9674dcb-5085-4a16-b785-4c70dd1589bd">
+    <Platform Project="?" />
+  </Project>
 </Solution>

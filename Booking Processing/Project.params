@@ -1,2 +1,45 @@
 <?xml version="1.0"?>
-<SSIS:Parameters xmlns:SSIS="www.microsoft.com/SqlServer/SSIS" />
+<SSIS:Parameters xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
+  <SSIS:Parameter
+    SSIS:Name="pSourceFolder">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{f7b09af7-f1bb-4c36-bcaa-20adc9eb8103}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description">Wyndham outbound source folder (no trailing slash). Override per environment, e.g. C:\\Users\\...\\Outbound on the server.</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">1</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Bookings\Wyndham Destinations\Outbound</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="pInboundFolder">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{3084ff12-453f-4a77-9520-78fb74c85835}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description">Wyndham inbound results folder (no trailing slash). Override per environment, e.g. C:\\Users\\...\\Inbound on the server.</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">1</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Bookings\Wyndham Destinations\Inbound</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+</SSIS:Parameters>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="ONPOINTSQL1.SSIS_Log"
+  DTS:DTSID="{BFBF5112-B1E9-413C-ADDC-ECEB4B3DE176}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=ONPOINTSQL1;User ID=jason.paine;Initial Catalog=SSIS_Log;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Export Wyndham Bookings SFTP-{BFBF5112-B1E9-413C-ADDC-ECEB4B3DE176}ONPOINTSQL1.SSIS_Log;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArwqr8cot70yyBXJKdYlPxwAAAAACAAAAAAAQZgAAAAEAACAAAADY0RfZly8/swP/AxlIfVOG2HW0OFSkjsVezhLoO9zgEwAAAAAOgAAAAAIAACAAAABX/6Mw7088pnQHa97r9q3KO8dtrAOWuwkOvY8pk+83aoAAAAAf8gS8+QXcCGSkprvv9aq/DY2/uNgpIKvd3EQUFUzfngv/CalU20kyuPsK3g+3PAGsxjZVO5OxyDUHqOUVxK1CXcnigoxB+foS6duimboE79c9j01XQSCXE3+wFAcSKOKhTAkcdM5rOB5avBVNDE89UWb6kJiDWyMeuLtfzWsJYkAAAADi40ZvhhpGQUWkf2gSDFCSZ18t7wRQ6lKhBTuFcamsDoh2uGKNVjPojOUfOyFuHz4TjpjVtGRpT06GJpG/ENDA</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
