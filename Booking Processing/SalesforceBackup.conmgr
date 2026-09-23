@@ -7,6 +7,6 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=ONPOINTSQL1;Initial Catalog=SalesforceBackup;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Export Wyndham Bookings SFTP-{8A68D9AB-75DC-4356-81A7-CA85F3C82676}ONPOINTSQL1.SalesforceBackup;Auto Translate=False;" />
+      DTS:ConnectionString="Data Source=ONPOINTSQL1;Initial Catalog=SalesforceBackup;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Export Wyndham Bookings SFTP-{8A68D9AB-75DC-4356-81A7-CA85F3C82676}ONPOINTSQL1.SalesforceBackup;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>
