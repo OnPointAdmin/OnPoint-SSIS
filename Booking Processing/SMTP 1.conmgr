@@ -8,7 +8,7 @@
       ConnectionString="SmtpServer=smtp.office365.com;UserName=jason.paine@onpointmrg.com;Port=587;EnableSsl=True;Timeout=10000;EnableAnonymousAuth=False"
       ConnectByProxy="False">
       <Password
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArwqr8cot70yyBXJKdYlPxwAAAAACAAAAAAAQZgAAAAEAACAAAADV3i0yZkgVq1kb9lbnu37EUD/J/UWyc99L4JVvQMnb/wAAAAAOgAAAAAIAACAAAADHXwHkjM8/rPcIBTHc6L35NCP7wqsKAve1Opl807KW5jAAAABcDXU6pxjdsz7iCw5goezI8Pp9AXjGMRHzbXZRiaqUo1T71uadg3KAf5VbpaXIqWxAAAAAXNAsuEz4WYqukf7i/iLQ1qEbe0FMyMCJYK/RHjJ5qXoey40EdqVKeCHgNDCcp/NgdK9DBSM8ku6ywkjyhMl8tg==</Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxmT0nXtm2Uysa99HTbDbKQAAAAACAAAAAAAQZgAAAAEAACAAAAD9iFH2/xwX5XtHmwTb8AI4fSOcfQv7Ru3Z75zjtsim8wAAAAAOgAAAAAIAACAAAAAvX/I5wO6te2xvyUSsbN9x8rsQTXPpl+8I760P1G3VJDAAAABYIxvPE5PNqTTIWagWIRqAHvNlEuJ0YiYPvEuydE2Q05k8g1X2IQ5FYlVjWSiXu+dAAAAAMuBE4VUV/57LHCgFTOk4Qi3z6IT93pBWRREysz8cCuopieXwYbHVcbvpVl6i99Baw0+YtyKLw3GfnEFhOKXtvg==</Password>
     </ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

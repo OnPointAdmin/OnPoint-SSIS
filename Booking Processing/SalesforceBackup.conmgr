@@ -1,16 +1,12 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="ONPOINTSQL1.SalesforceBackup"
-  DTS:DTSID="{F788478C-5C5E-4914-94D8-B77779EF163C}"
+  DTS:DTSID="{8A68D9AB-75DC-4356-81A7-CA85F3C82676}"
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=ONPOINTSQL1;User ID=Jason.Paine;Initial Catalog=SalesforceBackup;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package1-{F788478C-5C5E-4914-94D8-B77779EF163C}ONPOINTSQL1.SalesforceBackup;">
-      <DTS:Password
-        DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArwqr8cot70yyBXJKdYlPxwAAAAACAAAAAAAQZgAAAAEAACAAAAAaOUSeNka6+4Df/Z4h7GYFCUk6SQeC3LfUssjqSCKICgAAAAAOgAAAAAIAACAAAAAORfDjsHubfNhzTsGG2MAr7xyGi0rnNteQ4dx9JPvz+YAAAACQqoc4DJ+G30emY/antniuBXQJ6iU3pn6ySWwgWqnqTz4PCEV+Gtf19Rbze5NNdVB3oB/QJQmHdJI+iYbhOic8fgiXPDThpIu4I/vprQ+tJvbnQrPSE9ejoSYDyN5sV8lj6gC3KtK5cXmYTDyDZqjR9YgxWi3W4hFX/6unw8/3n0AAAABFiSDCHC2ONTANAhPnuxCjxRNem1i9fUuFnsaxQzlGhb7HjtdWkXKuoyaFZiNQebTiV/Zhk1vWyPvmSLmIEyx3</DTS:Password>
-    </DTS:ConnectionManager>
+      DTS:ConnectionString="Data Source=ONPOINTSQL1;Initial Catalog=SalesforceBackup;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Export Wyndham Bookings SFTP-{8A68D9AB-75DC-4356-81A7-CA85F3C82676}ONPOINTSQL1.SalesforceBackup;Auto Translate=False;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="ONPOINTSQL1.SalesforceBackup"
+  DTS:DTSID="{4AC5D541-0329-4B36-BD6A-06E913F71FBA}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=ONPOINTSQL1;Initial Catalog=SalesforceBackup;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Export Wyndham Survey Responses-{4AC5D541-0329-4B36-BD6A-06E913F71FBA}ONPOINTSQL1.SalesforceBackup;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

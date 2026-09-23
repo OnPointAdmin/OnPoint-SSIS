@@ -42,4 +42,46 @@
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
   </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="pPackageFolder">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{a4e8c1d2-7b56-4f3a-9c81-2d6e5f0a8b14}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description">Wyndham package outgoing folder (no trailing slash). Override per environment, e.g. C:\\Users\\...\\Package\\Outgoing on the server.</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">1</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Bookings\Wyndham Destinations\Package\Outgoing</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="pPackageInboundFolder">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{c1d4e8a2-6b37-4f91-8e05-3a7b9c2d1e64}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description">Wyndham package response folder (no trailing slash). Override per environment, e.g. C:\\Users\\...\\Package\\Incoming on the server.</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">1</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Bookings\Wyndham Destinations\Package\Incoming</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
 </SSIS:Parameters>

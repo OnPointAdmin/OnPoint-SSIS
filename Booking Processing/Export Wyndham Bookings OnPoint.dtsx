@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="Export Wyndham Bookings SFTP"
-  DTS:VersionBuild="116"
-  DTS:VersionGUID="{A68B4C32-4802-4A7B-89AF-6B555ACC784A}">
+  DTS:VersionBuild="119"
+  DTS:VersionGUID="{578A9A18-D23C-4964-9833-BA00D3311257}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -678,7 +678,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="MessageSubject">
       <DTS:VariableValue
-        DTS:DataType="8">OnPoint_ThirdParty_Tours_08122024_1931.csv 2026.09.03 Booking Count: 0</DTS:VariableValue>
+        DTS:DataType="8">OnPoint_ThirdParty_Tours_08122024_1931.csv 2026.09.22 Booking Count: 0</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1681,8 +1681,8 @@
               <connections>
                 <connection
                   refId="Package\Export Bookings to CSV\Source - Query.Connections[OleDbConnection]"
-                  connectionManagerID="{F788478C-5C5E-4914-94D8-B77779EF163C}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[ONPOINTSQL1.SalesforceBackup]"
+                  connectionManagerID="{F788478C-5C5E-4914-94D8-B77779EF163C}:invalid"
+                  connectionManagerRefId="{F788478C-5C5E-4914-94D8-B77779EF163C}:invalid"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2840,7 +2840,7 @@
         DTS:FilterKind="0" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{F788478C-5C5E-4914-94D8-B77779EF163C}"
+          SQLTask:Connection="{8A68D9AB-75DC-4356-81A7-CA85F3C82676}"
           SQLTask:SqlStatementSource="SET ? = (SELECT Count(DISTINCT (t.[Vendor Reference ID])) AS [Count]&#xA;FROM [dbo].[Booking__c_Wyndham_OnPoint_Export] as t)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -2896,7 +2896,7 @@
           UseInlineStyle="False"
           IsHtmlEmail="True"
           DefaultStyle="&#xA;&lt;style type=&quot;text/css&quot;&gt;&#xA;body,div,p,span,td,th,table {&#xA; font-family: Helvetica, Arial, sans-serif;&#xA; font-size: 10pt; &#xA;}&#xA;h1,h2,h3,h4,h5{&#xA;font-family: Helvetica, Arial, sans-serif;&#xA;}&#xA;&#xA;table { &#xA; border-collapse: &#xA; collapse; border-spacing: 0; &#xA;}&#xA;&#xA;tr.odd    {background-color: #cccccc}&#xA;tr.even   {background-color: #fafafa}&#xA;td, th { border: 1px solid #bbb;padding: 5 5 5 5} &#xA;th { background: #F3F3F3;  font-weight: bold;}&#xA;&lt;/style&gt;&#xA;&#xA;"
-          Subject="OnPoint_ThirdParty_Tours_08122024_1931.csv 2026.09.03 Booking Count: 0"
+          Subject="OnPoint_ThirdParty_Tours_08122024_1931.csv 2026.09.22 Booking Count: 0"
           From="jason.paine@onpointmrg.com"
           To="jason.paine@onpointmrg.com"
           Cc=""
@@ -3043,6 +3043,36 @@
           ReadOnlyVariables="User::CtrlFilePath,User::FilePath,User::SFTPFingerprint,User::SFTPHostName,User::SFTPLocalFilePath,User::SFTPPassword,User::SFTPRemoteDirectory,User::SFTPUserName"
           ReadWriteVariables="User::ErrorCode,User::ErrorDescription,User::ErrorMessage,User::ErrorOccurred">
           <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_19e600c36c404cbfa94d6f37d18ee844")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("-")]
+[assembly: AssemblyProduct("ST_19e600c36c404cbfa94d6f37d18ee844")]
+[assembly: AssemblyCopyright("Copyright @ - 2024")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -3161,35 +3191,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_19e600c36c404cbfa94d6f37d18ee844.Properties.Settings.get_Default():ST_19e600c36c404cbfa94d6f37d18ee844.Properties.Sett" +
-    "ings")]
-
-namespace ST_19e600c36c404cbfa94d6f37d18ee844.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[using System;
@@ -3509,35 +3510,34 @@ namespace ST_19e600c36c404cbfa94d6f37d18ee844.Properties {
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_19e600c36c404cbfa94d6f37d18ee844")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("-")]
-[assembly: AssemblyProduct("ST_19e600c36c404cbfa94d6f37d18ee844")]
-[assembly: AssemblyCopyright("Copyright @ - 2024")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_19e600c36c404cbfa94d6f37d18ee844.Properties.Settings.get_Default():ST_19e600c36c404cbfa94d6f37d18ee844.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_19e600c36c404cbfa94d6f37d18ee844.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="Properties\Settings.settings"
             Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -4243,9 +4243,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="182.285714285715,42.2857142857143"
+          Size="182,42"
           Id="Package.EventHandlers[OnError]\ZS HTML Email Task"
-          TopLeft="1261,450" />
+          TopLeft="497.250034142284,125.684214087239" />
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
@@ -4255,15 +4255,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="152.8,41.6"
+          Size="152.666666666667,41.3333333333334"
           Id="Package\Export Bookings to CSV\Source - Query"
           TopLeft="12.3,5.49999999999995" />
         <NodeLayout
-          Size="166.4,41.6"
+          Size="166.666666666667,41.3333333333334"
           Id="Package\Export Bookings to CSV\Destination - Bookings"
           TopLeft="5.50000000000003,208.7" />
         <NodeLayout
-          Size="132.8,41.6"
+          Size="132.666666666667,41.3333333333334"
           Id="Package\Export Bookings to CSV\Row Count"
           TopLeft="22.3,107.1" />
         <EdgeLayout
@@ -4314,7 +4314,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Text="8ft"
           ParentId="Package\Export Bookings to CSV"
           FontInfo="{assembly:Null}"
-          Size="43.2,40"
+          Size="43.3333333333334,66.6666666666667"
           Id="50de7fe9-8b7e-44bf-b201-757665c2682f"
           TopLeft="1590.8332701193,136.933334421582" />
       </GraphLayout>

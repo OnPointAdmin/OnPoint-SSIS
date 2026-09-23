@@ -1,0 +1,24 @@
+---
+description: Do not edit open SSIS packages; Visual Studio crashes on reload
+alwaysApply: true
+---
+
+# Visual Studio SSIS designer reload crash
+
+Editing `.dtsx`, `.dtproj`, `.params`, or `.conmgr` on disk while the file is open in Visual Studio SSDT triggers a reload prompt that hangs or crashes Visual Studio. The user then has to kill `devenv.exe`.
+
+## Before changing those files
+
+1. Tell the user to **close the package and project designer tabs in Visual Studio** (Solution Explorer can stay open).
+2. Wait for them to confirm it is closed.
+3. Only then write the files.
+
+Do not silently patch a package they are likely debugging in Visual Studio.
+
+## If they still get the reload prompt
+
+Tell them: click **No / Ignore** (do not reload), close the package **without saving**, then reopen it from Solution Explorer so Visual Studio reads the disk copy.
+
+## Prefer designer-safe changes
+
+When a change is a few property values, tell them the exact Visual Studio clicks instead of rewriting the `.dtsx`.

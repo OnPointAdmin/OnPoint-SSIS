@@ -16,7 +16,49 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value"></SSIS:Property>
+        SSIS:Name="Value">C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="pWyndhamOutbound">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{8F3A2C91-4B6E-4D17-A9C5-1E7D0B4F6A28}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description">Wyndham outbound folder (no trailing slash). Development uses D:\Users\...; Server uses C:\Users\... .</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">1</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Bookings\Wyndham Destinations\Outbound</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="pWydhamOutboundLeads">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{2fa79bb3-1855-45cd-8636-ece79da60ee9}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description">Wyndham outbound leads folder (no trailing slash). Development uses D:\Users\...; Server uses C:\Users\... .</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">1</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">C:\Users\Jason.Paine\OneDrive - onpointmrg.com\Bookings\Wyndham Destinations\Outbound\Leads</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>

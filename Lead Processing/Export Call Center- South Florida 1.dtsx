@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="Export OPMA - Call Center- South Florida"
-  DTS:VersionBuild="275"
-  DTS:VersionGUID="{D00865D7-FA91-4E08-9BD4-A47E9432A97C}">
+  DTS:VersionBuild="277"
+  DTS:VersionGUID="{64B54B26-EB9A-4938-B623-95DDF314E52A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -33,7 +33,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.06.2145.csv">
+          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.14.1540.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -213,6 +213,15 @@
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Type_of_Credit_Card__c"
+              DTS:DTSID="{F3A8B2C1-4D5E-6F70-8192-A3B4C5D6E7F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
               DTS:MaximumWidth="255"
               DTS:DataType="129"
@@ -239,7 +248,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.06.2145_Reassigned.csv">
+          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.14.1540_Reassigned.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -301,7 +310,7 @@
       DTS:ObjectName="EndDate">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">09/07/2026</DTS:Property>
+        DTS:Name="ParameterValue">09/14/2026</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -311,7 +320,7 @@
       DTS:ObjectName="PartnerListCompanies">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">Wyndham Destinations</DTS:Property>
+        DTS:Name="ParameterValue">Wyndham Destinations; Preferred Guest Resorts, LLC; Prime Vacations International; PVI LLC</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -373,7 +382,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FileName">
       <DTS:VariableValue
-        DTS:DataType="8">OnPointMarketingAgency_Leads_0_2026.09.06.2145.csv</DTS:VariableValue>
+        DTS:DataType="8">OnPointMarketingAgency_Leads_0_2026.09.14.1540.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -384,7 +393,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FileNameReasigned">
       <DTS:VariableValue
-        DTS:DataType="8">OnPointMarketingAgency_Leads_0_2026.09.06.2145_Reassigned.csv</DTS:VariableValue>
+        DTS:DataType="8">OnPointMarketingAgency_Leads_0_2026.09.14.1540_Reassigned.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -395,7 +404,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FilePath">
       <DTS:VariableValue
-        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.06.2145.csv</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.14.1540.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -406,7 +415,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FilePathReassigned">
       <DTS:VariableValue
-        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.06.2145_Reassigned.csv</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_0_2026.09.14.1540_Reassigned.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -438,7 +447,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="MessageSubject">
       <DTS:VariableValue
-        DTS:DataType="8">On Point Marketing Agency Leads 2026.09.06 Lead Count: 0</DTS:VariableValue>
+        DTS:DataType="8">On Point Marketing Agency Leads 2026.09.14 Lead Count: 0</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -600,7 +609,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{15658E45-DC0B-46D5-A344-25EF57876B94}"
-          SQLTask:SqlStatementSource="-- SSIS Execute SQL: South Florida Leads → Get_Leads_Count_Down1.9&#xA;-- Parameter markers (?):&#xA;--   0 = @CountRequested (input)&#xA;--   1 = @PartnerListCompanies (input)&#xA;--   2 = @TourAgeStart / StartDate (input)&#xA;--   3 = @TourAgeEnd / EndDate (input)&#xA;--   4 = @CountAvailable (output)&#xA;--   5 = @CountReturned (output)&#xA;--   6 = @SessionIdOut (output)&#xA;&#xA;TRUNCATE TABLE [dbo].[Temp_Export_Leads]&#xA;TRUNCATE TABLE [dbo].[Temp_Get_Leads]&#xA;&#xA;DECLARE @ClientName VARCHAR(80)&#xA;DECLARE @ExportName VARCHAR(100)&#xA;DECLARE @Vertical VARCHAR(50)&#xA;DECLARE @LeadSource VARCHAR(500)&#xA;DECLARE @Venue VARCHAR(500)&#xA;DECLARE @Locations VARCHAR(80)&#xA;DECLARE @CountRequested INT&#xA;DECLARE @MinIncome INT&#xA;DECLARE @MaxIncome INT&#xA;DECLARE @MinAge INT&#xA;DECLARE @MaxAge INT&#xA;DECLARE @MaritalStatus VARCHAR(50)&#xA;DECLARE @TourAgeStart DATE&#xA;DECLARE @TourAgeEnd DATE&#xA;DECLARE @HomeOwnerOrRenter VARCHAR(10)&#xA;DECLARE @IsHasCreditCard BIT&#xA;DECLARE @LeadAge VARCHAR(30)&#xA;DECLARE @CheckPartnerList BIT&#xA;DECLARE @CheckClientZips BIT&#xA;DECLARE @CheckClientSuppression BIT&#xA;DECLARE @CheckSoldLeads BIT&#xA;DECLARE @ZipFileName VARCHAR(500)&#xA;DECLARE @IncludeOrExcludeZip VARCHAR(10)&#xA;DECLARE @ZipFileSegment VARCHAR(100)&#xA;DECLARE @States VARCHAR(100)&#xA;DECLARE @IncludeOrExcludeState AS VARCHAR(10)&#xA;DECLARE @ExcludeBookings BIT&#xA;DECLARE @ExcludeSoldSameVertical BIT&#xA;DECLARE @RecycledOnly AS BIT&#xA;DECLARE @RecycleSameVerticalDate DATE&#xA;DECLARE @RecycleSameClientDate DATE&#xA;DECLARE @AutoTourQualified BIT&#xA;DECLARE @Gender AS VARCHAR(255)&#xA;DECLARE @QualificationCode VARCHAR(10)&#xA;DECLARE @CheckPartnerListField AS BIT&#xA;DECLARE @LongTermRenter AS BIT&#xA;DECLARE @MinCreditScore AS INT&#xA;DECLARE @AreaCodeList AS VARCHAR(255)&#xA;DECLARE @FilterNames AS BIT&#xA;DECLARE @DestinationZip VARCHAR(10)&#xA;DECLARE @RadiusMiles DECIMAL(9,2)&#xA;DECLARE @PartnerListCompanies VARCHAR(500)&#xA;---------------------------------------&#xA;DECLARE @SessionId UNIQUEIDENTIFIER&#xA;DECLARE @ProcName VARCHAR(128)&#xA;DECLARE @ProcSection VARCHAR(50)&#xA;DECLARE @Status BIT&#xA;DECLARE @ErrorMessage NVARCHAR(2044)&#xA;DECLARE @CountAvailable INT&#xA;DECLARE @CountReturned INT&#xA;DECLARE @DupesPhone INT&#xA;DECLARE @DupesEmail INT&#xA;DECLARE @SessionIdOut UNIQUEIDENTIFIER&#xA;&#xA;------------------------------------------------&#xA;SET @CountRequested = ?&#xA;SET @ClientName = 'On Point Marketing Agency'&#xA;SET @ExportName = 'South Florida Leads'&#xA;SET @Vertical = 'Travel'&#xA;SET @LeadSource = 'On Point Marketing Agency'   ---,Kaleo Marketing LLC,Resort Vacations Inc. -&#xA;SET @PartnerListCompanies = ?&#xA;SET @CheckPartnerListField = 'true'&#xA;SET @Venue = '' --American Dream Kiosk 1, American Dream Kiosk 2, American Dream Kiosk 3&#xA;SET @Locations = ''&#xA;SET @TourAgeStart = ?&#xA;SET @TourAgeEnd = ?&#xA;SET @CheckPartnerList = 'true'&#xA;SET @LeadAge = 'U30,U60,U90,91+,365+' --U30,U60,U90,91+,365+&#xA;SET @CheckClientZips = 'false'&#xA;SET @ZipFileName = ''&#xA;SET @IncludeOrExcludeZip = ''&#xA;SET @States = 'FL'&#xA;SET @IncludeOrExcludeState = 'Include'&#xA;SET @MinIncome = '75'&#xA;SET @MaxIncome = ''&#xA;SET @MinAge = '28'&#xA;SET @MaxAge = '75'&#xA;SET @MaritalStatus = 'Married, Single Female' --Options: Married, Single Female, Single Male, All&#xA;SET @HomeOwnerOrRenter = 'Both' --Options: 'Home Owner', 'Renter', 'Both'&#xA;SET @IsHasCreditCard = 'false'&#xA;SET @ExcludeBookings = 'true'&#xA;SET @CheckSoldLeads = 'true'&#xA;SET @RecycledOnly = 'false'&#xA;SET @ExcludeSoldSameVertical = 'true'&#xA;SET @RecycleSameVerticalDate = DATEADD(dd, -90, GETDATE())&#xA;SET @RecycleSameClientDate = DATEADD(dd, -90, GETDATE())&#xA;SET @QualificationCode = ''&#xA;SET @CheckClientSuppression = 'TRUE'&#xA;SET @AutoTourQualified = 'false'&#xA;SET @Gender = '' --Female, Male, Other, Rather Not Say&#xA;SET @LongTermRenter = 'FALSE'&#xA;SET @MinCreditScore = ''&#xA;SET @AreaCodeList = ''&#xA;SET @FilterNames = 'false'&#xA;SET @DestinationZip = '' --10017&#xA;SET @RadiusMiles = '0' --30&#xA;&#xA;EXECUTE [dbo].[Get_Leads_Count_Down1.9] @ClientName&#xA;    , @ExportName&#xA;    , @Vertical&#xA;    , @LeadSource&#xA;    , @Venue&#xA;    , @Locations&#xA;    , @CountRequested&#xA;    , @MinIncome&#xA;    , @MaxIncome&#xA;    , @MinAge&#xA;    , @MaxAge&#xA;    , @MaritalStatus&#xA;    , @HomeOwnerOrRenter&#xA;    , @IsHasCreditCard&#xA;    , @LeadAge&#xA;    , @TourAgeStart&#xA;    , @TourAgeEnd&#xA;    , @CheckPartnerList&#xA;    , @CheckClientZips&#xA;    , @CheckClientSuppression&#xA;    , @CheckSoldLeads&#xA;    , @ZipFileName&#xA;    , @IncludeOrExcludeZip&#xA;    , @ZipFileSegment&#xA;    , @States&#xA;    , @IncludeOrExcludeState&#xA;    , @ExcludeBookings&#xA;    , @ExcludeSoldSameVertical&#xA;    , @RecycledOnly&#xA;    , @RecycleSameVerticalDate&#xA;    , @RecycleSameClientDate&#xA;    , @AutoTourQualified&#xA;    , @Gender&#xA;    , @QualificationCode&#xA;    , @CheckPartnerListField&#xA;    , @LongTermRenter&#xA;    , @MinCreditScore&#xA;    , @AreaCodeList&#xA;    , @FilterNames&#xA;    , @DestinationZip&#xA;    , @RadiusMiles&#xA;    , @PartnerListCompanies&#xA;    ----------------------------&#xA;    , @SessionId&#xA;    , @ProcName OUTPUT&#xA;    , @ProcSection OUTPUT&#xA;    , @Status OUTPUT&#xA;    , @ErrorMessage OUTPUT&#xA;    , ? OUTPUT --Count Available&#xA;    , ? OUTPUT --CountReturned&#xA;    , @DupesPhone OUTPUT&#xA;    , @DupesEmail OUTPUT&#xA;    , ? OUTPUT --SessionId&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:SqlStatementSource="-- SSIS Execute SQL: South Florida Leads → Get_Leads_Count_Down1.9&#xA;-- Parameter markers (?):&#xA;--   0 = @CountRequested (input)&#xA;--   1 = @PartnerListCompanies (input)&#xA;--   2 = @TourAgeStart / StartDate (input)&#xA;--   3 = @TourAgeEnd / EndDate (input)&#xA;--   4 = @CountAvailable (output)&#xA;--   5 = @CountReturned (output)&#xA;--   6 = @SessionIdOut (output)&#xA;&#xA;TRUNCATE TABLE [dbo].[Temp_Export_Leads]&#xA;TRUNCATE TABLE [dbo].[Temp_Get_Leads]&#xA;&#xA;DECLARE @ClientName VARCHAR(80)&#xA;DECLARE @ExportName VARCHAR(100)&#xA;DECLARE @Vertical VARCHAR(50)&#xA;DECLARE @LeadSource VARCHAR(500)&#xA;DECLARE @Venue VARCHAR(500)&#xA;DECLARE @Locations VARCHAR(80)&#xA;DECLARE @CountRequested INT&#xA;DECLARE @MinIncome INT&#xA;DECLARE @MaxIncome INT&#xA;DECLARE @MinAge INT&#xA;DECLARE @MaxAge INT&#xA;DECLARE @MaritalStatus VARCHAR(50)&#xA;DECLARE @TourAgeStart DATE&#xA;DECLARE @TourAgeEnd DATE&#xA;DECLARE @HomeOwnerOrRenter VARCHAR(10)&#xA;DECLARE @IsHasCreditCard BIT&#xA;DECLARE @LeadAge VARCHAR(30)&#xA;DECLARE @CheckPartnerList BIT&#xA;DECLARE @CheckClientZips BIT&#xA;DECLARE @CheckClientSuppression BIT&#xA;DECLARE @CheckSoldLeads BIT&#xA;DECLARE @ZipFileName VARCHAR(500)&#xA;DECLARE @IncludeOrExcludeZip VARCHAR(10)&#xA;DECLARE @ZipFileSegment VARCHAR(100)&#xA;DECLARE @States VARCHAR(100)&#xA;DECLARE @IncludeOrExcludeState AS VARCHAR(10)&#xA;DECLARE @ExcludeBookings BIT&#xA;DECLARE @ExcludeSoldSameVertical BIT&#xA;DECLARE @RecycledOnly AS BIT&#xA;DECLARE @RecycleSameVerticalDate DATE&#xA;DECLARE @RecycleSameClientDate DATE&#xA;DECLARE @AutoTourQualified BIT&#xA;DECLARE @Gender AS VARCHAR(255)&#xA;DECLARE @QualificationCode VARCHAR(10)&#xA;DECLARE @CheckPartnerListField AS BIT&#xA;DECLARE @LongTermRenter AS BIT&#xA;DECLARE @MinCreditScore AS INT&#xA;DECLARE @AreaCodeList AS VARCHAR(255)&#xA;DECLARE @FilterNames AS BIT&#xA;DECLARE @DestinationZip VARCHAR(10)&#xA;DECLARE @RadiusMiles DECIMAL(9,2)&#xA;DECLARE @PartnerListCompanies VARCHAR(500)&#xA;---------------------------------------&#xA;DECLARE @SessionId UNIQUEIDENTIFIER&#xA;DECLARE @ProcName VARCHAR(128)&#xA;DECLARE @ProcSection VARCHAR(50)&#xA;DECLARE @Status BIT&#xA;DECLARE @ErrorMessage NVARCHAR(2044)&#xA;DECLARE @CountAvailable INT&#xA;DECLARE @CountReturned INT&#xA;DECLARE @DupesPhone INT&#xA;DECLARE @DupesEmail INT&#xA;DECLARE @SessionIdOut UNIQUEIDENTIFIER&#xA;&#xA;------------------------------------------------&#xA;SET @CountRequested = ?&#xA;SET @ClientName = 'On Point Marketing Agency'&#xA;SET @ExportName = 'South Florida Leads'&#xA;SET @Vertical = 'Travel'&#xA;SET @LeadSource = 'On Point Marketing Agency'   ---,Kaleo Marketing LLC,Resort Vacations Inc. -&#xA;SET @PartnerListCompanies = ?&#xA;SET @CheckPartnerListField = 'true'&#xA;SET @Venue = '' --American Dream Kiosk 1, American Dream Kiosk 2, American Dream Kiosk 3&#xA;SET @Locations = ''&#xA;SET @TourAgeStart = ?&#xA;SET @TourAgeEnd = ?&#xA;SET @CheckPartnerList = 'true'&#xA;SET @LeadAge = 'U30,U60,U90,91+,365+' --U30,U60,U90,91+,365+&#xA;SET @CheckClientZips = 'false'&#xA;SET @ZipFileName = ''&#xA;SET @IncludeOrExcludeZip = ''&#xA;SET @States = 'FL'&#xA;SET @IncludeOrExcludeState = 'Include'&#xA;SET @MinIncome = '50'&#xA;SET @MaxIncome = ''&#xA;SET @MinAge = '28'&#xA;SET @MaxAge = '75'&#xA;SET @MaritalStatus = 'All' --Options: Married, Single Female, Single Male, All&#xA;SET @HomeOwnerOrRenter = 'Both' --Options: 'Home Owner', 'Renter', 'Both'&#xA;SET @IsHasCreditCard = 'true'&#xA;SET @ExcludeBookings = 'true'&#xA;SET @CheckSoldLeads = 'true'&#xA;SET @RecycledOnly = 'false'&#xA;SET @ExcludeSoldSameVertical = 'true'&#xA;SET @RecycleSameVerticalDate = dateadd(dd,-90,getdate())&#xA;SET @RecycleSameClientDate = dateadd(dd,-90,getdate())&#xA;SET @QualificationCode = ''&#xA;SET @CheckClientSuppression = 'TRUE'&#xA;SET @AutoTourQualified = 'false'&#xA;SET @Gender = '' --Female, Male, Other, Rather Not Sayy&#xA;Set @LongTermRenter = ''&#xA;SET @MinCreditScore = ''&#xA;SET&#x9;@AreaCodeList =''&#xA;SET&#x9;@FilterNames = 'false'&#xA;SET&#x9;@DestinationZip = '' --10017&#xA;SET @RadiusMiles  = '0' --30&#xA;&#xA;EXECUTE [dbo].[Get_Leads_Count_Down1.9] @ClientName&#xA;    , @ExportName&#xA;    , @Vertical&#xA;    , @LeadSource&#xA;    , @Venue&#xA;    , @Locations&#xA;    , @CountRequested&#xA;    , @MinIncome&#xA;    , @MaxIncome&#xA;    , @MinAge&#xA;    , @MaxAge&#xA;    , @MaritalStatus&#xA;    , @HomeOwnerOrRenter&#xA;    , @IsHasCreditCard&#xA;    , @LeadAge&#xA;    , @TourAgeStart&#xA;    , @TourAgeEnd&#xA;    , @CheckPartnerList&#xA;    , @CheckClientZips&#xA;    , @CheckClientSuppression&#xA;    , @CheckSoldLeads&#xA;    , @ZipFileName&#xA;    , @IncludeOrExcludeZip&#xA;    , @ZipFileSegment&#xA;    , @States&#xA;    , @IncludeOrExcludeState&#xA;    , @ExcludeBookings&#xA;    , @ExcludeSoldSameVertical&#xA;    , @RecycledOnly&#xA;    , @RecycleSameVerticalDate&#xA;    , @RecycleSameClientDate&#xA;    , @AutoTourQualified&#xA;    , @Gender&#xA;    , @QualificationCode&#xA;    , @CheckPartnerListField&#xA;    , @LongTermRenter&#xA;    , @MinCreditScore&#xA;    , @AreaCodeList&#xA;    , @FilterNames&#xA;    , @DestinationZip&#xA;    , @RadiusMiles&#xA;    , @PartnerListCompanies&#xA;    ----------------------------&#xA;    , @SessionId&#xA;    , @ProcName OUTPUT&#xA;    , @ProcSection OUTPUT&#xA;    , @Status OUTPUT&#xA;    , @ErrorMessage OUTPUT&#xA;    , ? OUTPUT --Count Available&#xA;    , ? OUTPUT --CountReturned&#xA;    , @DupesPhone OUTPUT&#xA;    , @DupesEmail OUTPUT&#xA;    , ? OUTPUT --SessionId&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="User::vCountRequested"
@@ -1250,6 +1259,13 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                       externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[PartnerList]"
                       lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Partners_List]" />
                     <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[Type_of_Credit_Card__c]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Type_of_Credit_Card__c"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Type_of_Credit_Card__c]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Type_of_Credit_Card__c]" />
+                    <inputColumn
                       refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[File Name]"
                       cachedDataType="wstr"
                       cachedLength="255"
@@ -1379,6 +1395,12 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                       dataType="text"
                       name="PartnerList" />
                     <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Type_of_Credit_Card__c]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Type_of_Credit_Card__c" />
+                    <externalMetadataColumn
                       refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[File Name]"
                       codePage="1252"
                       dataType="str"
@@ -1438,6 +1460,7 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
 	, [t].[Event]
 	, cast([t].Entry_Created_Date as DATE) as CreatedDate
     ,cast([t].[Partners_List] as varchar(1000)) as [Partners_List]
+	, [t].[Credit_Card] as [Type_of_Credit_Card__c]
 FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                 <property
                   dataType="System.String"
@@ -1685,6 +1708,16 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                       lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Partners_List]"
                       name="Partners_List"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Type_of_Credit_Card__c]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Type_of_Credit_Card__c]"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Type_of_Credit_Card__c]"
+                      name="Type_of_Credit_Card__c"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1792,6 +1825,11 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                       dataType="str"
                       length="1000"
                       name="Partners_List" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Type_of_Credit_Card__c]"
+                      dataType="wstr"
+                      length="255"
+                      name="Type_of_Credit_Card__c" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1924,6 +1962,12 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                       length="1000"
                       lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Partners_List]"
                       name="Partners_List" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Type_of_Credit_Card__c]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Type_of_Credit_Card__c]"
+                      name="Type_of_Credit_Card__c" />
                     <outputColumn
                       refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"

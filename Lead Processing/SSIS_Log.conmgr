@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="ONPOINTSQL1.SSIS_Log"
+  DTS:DTSID="{C8D4E2A7-1B5F-4A93-8E16-7F2C9D0B4A51}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=ONPOINTSQL1;Initial Catalog=SSIS_Log;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Export Wyndham Survey Responses-{C8D4E2A7-1B5F-4A93-8E16-7F2C9D0B4A51}ONPOINTSQL1.SSIS_Log;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

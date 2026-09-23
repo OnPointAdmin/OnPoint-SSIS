@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="Export OPMA - Tour No Buys Palm Aire"
-  DTS:VersionBuild="273"
-  DTS:VersionGUID="{ECF9F5A3-8C97-49D6-A47E-9D84CBE5B2BD}">
+  DTS:VersionBuild="274"
+  DTS:VersionGUID="{77560CF6-ABE8-4F77-95C9-7AE06E201DBE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -33,7 +33,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543.csv">
+          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.14.1223.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -312,6 +312,15 @@
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Type_of_Credit_Card__c"
+              DTS:DTSID="{C6D7E8F9-0A1B-2C3D-4E5F-60718293A4B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
               DTS:MaximumWidth="255"
               DTS:DataType="129"
@@ -338,7 +347,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543_Reassigned.csv">
+          DTS:ConnectionString="D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.14.1223_Reassigned.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -477,7 +486,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FileName">
       <DTS:VariableValue
-        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543.csv</DTS:VariableValue>
+        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.14.1223.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -488,7 +497,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FileNameReasigned">
       <DTS:VariableValue
-        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543_Reassigned.csv</DTS:VariableValue>
+        DTS:DataType="8">OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.14.1223_Reassigned.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -499,7 +508,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FilePath">
       <DTS:VariableValue
-        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543.csv</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.14.1223.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -510,7 +519,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FilePathReassigned">
       <DTS:VariableValue
-        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.04.1543_Reassigned.csv</DTS:VariableValue>
+        DTS:DataType="8">D:\Users\Jason.Paine\OneDrive - onpointmrg.com\Leads\Clients\OnPointMarketingAgency\Leads\OnPointMarketingAgency_Leads_TourNoBuys_0_2026.09.14.1223_Reassigned.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -542,7 +551,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="MessageSubject">
       <DTS:VariableValue
-        DTS:DataType="8">On Point Marketing Agency Leads 2026.09.04 Lead Count: 0</DTS:VariableValue>
+        DTS:DataType="8">On Point Marketing Agency Leads 2026.09.14 Lead Count: 0</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1443,6 +1452,13 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                       externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[ExportDate]"
                       lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[ExportDate]" />
                     <inputColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[Type_of_Credit_Card__c]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Type_of_Credit_Card__c"
+                      externalMetadataColumnId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Type_of_Credit_Card__c]"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Type_of_Credit_Card__c]" />
+                    <inputColumn
                       refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].Columns[File Name]"
                       cachedDataType="wstr"
                       cachedLength="255"
@@ -1644,6 +1660,12 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                       length="100"
                       name="ExportDate" />
                     <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[Type_of_Credit_Card__c]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Type_of_Credit_Card__c" />
+                    <externalMetadataColumn
                       refId="Package\Export Leads to CSV\Flat File Connection.Inputs[Flat File Destination Input].ExternalColumns[File Name]"
                       codePage="1252"
                       dataType="str"
@@ -1713,6 +1735,7 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
 	, [t].[Premiums]
 	, [t].[Tour_Result]
 	, [t].[TourOrNoShow]
+	, [t].[Credit_Card] as [Type_of_Credit_Card__c]
 FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                 <property
                   dataType="System.String"
@@ -2060,6 +2083,16 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                       lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[TourOrNoShow]"
                       name="TourOrNoShow"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Type_of_Credit_Card__c]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Type_of_Credit_Card__c]"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].Columns[Type_of_Credit_Card__c]"
+                      name="Type_of_Credit_Card__c"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2217,6 +2250,11 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                       dataType="wstr"
                       length="50"
                       name="TourOrNoShow" />
+                    <externalMetadataColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Type_of_Credit_Card__c]"
+                      dataType="wstr"
+                      length="255"
+                      name="Type_of_Credit_Card__c" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2409,6 +2447,12 @@ FROM [dbo].[Temp_Export_Leads] AS [t]</property>
                       length="50"
                       lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TourOrNoShow]"
                       name="TourOrNoShow" />
+                    <outputColumn
+                      refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Type_of_Credit_Card__c]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Type_of_Credit_Card__c]"
+                      name="Type_of_Credit_Card__c" />
                     <outputColumn
                       refId="Package\Export Leads to CSV\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"

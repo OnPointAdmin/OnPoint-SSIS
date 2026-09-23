@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SSIS_Log"
+  DTS:DTSID="{BFBF5112-B1E9-413C-ADDC-ECEB4B3DE176}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=ONPOINTSQL1;Initial Catalog=SSIS_Log;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Export Wyndham Bookings SFTP-{BFBF5112-B1E9-413C-ADDC-ECEB4B3DE176}ONPOINTSQL1.SSIS_Log;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

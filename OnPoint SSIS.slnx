@@ -4,10 +4,10 @@
     <BuildType Name="Server" />
     <Platform Name="Default" />
   </Configurations>
-  <Project Path="Booking Processing/Booking Processing.dtproj" Type="c9674dcb-5085-4a16-b785-4c70dd1589bd">
+  <Project Path="D:/Users/Jason.Paine/OneDrive - onpointmrg.com/Repository/SSIS/OnPoint SSIS/Booking Processing/Booking Processing.dtproj" Type="c9674dcb-5085-4a16-b785-4c70dd1589bd">
     <Platform Project="?" />
   </Project>
-  <Project Path="Lead Processing/Lead Processing.dtproj" Type="c9674dcb-5085-4a16-b785-4c70dd1589bd">
+  <Project Path="D:/Users/Jason.Paine/OneDrive - onpointmrg.com/Repository/SSIS/OnPoint SSIS/Lead Processing/Lead Processing.dtproj" Type="c9674dcb-5085-4a16-b785-4c70dd1589bd">
     <Platform Project="?" />
   </Project>
 </Solution>
